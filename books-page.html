@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Livros</title>
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="Dragões, HTTYD, Como Treinar O Seu Dragão, Berk">
+	<meta name="author" content="Júlia Sophia, Sérgio">
+	<link rel="icon" type="image/x-icon" href="img/brasao-dragao.svg">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<style>
+	article {
+		background-image: url(img/banguela-book-img.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	/* O que deixa o offcanvas com aspecto de livro: */
+	.offcanvas {
+		background-image: url(img/book-old-page.avif);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		/* A fonte que se parece com a de um livro. */
+	}
+
+	
+</style>
+
+<body>
+
+	<!-- Início do Nav -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-underline sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<!-- Img da logo no nav -->
+				<img src="img/brasao-berk.png" alt="Logo" width="31" height="auto"
+					class="d-inline-block align-text-top">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="index.html">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="curtas.html">Curtas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cenas-especiais.html">Cenas Especiais</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="books-page.html" style="color: rgb(172, 3, 3);">Livros</a>
+					</li>
+
+					<!-- Início do dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Filmes
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="filme-um.html">Como Treinar O Seu Dragão</a></li>
+							<li><a class="dropdown-item" href="filme-dois.html">Como Treinar O Seu Dragão 2</a></li>
+							<li><a class="dropdown-item" href="filme-tres.html">Como Treinar O Seu Dragão 3</a></li>
+							<li><a class="dropdown-item" href="filme-live-action.html">Como Treinar O Seu Dragão Live
+									Action</a></li>
+						</ul>
+					</li>
+					<!-- Fim do dropdown -->
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Classes
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item" href="boulder-class.html">
+									<img src="img/boulder-img-bg-dropown.png" class="img-fluid small"
+										alt="Classe Boulder"> Boulder
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="mistery-class.html">
+									<img src="img/mistery-class-img.png" class="img-fluid small" alt="Classe Mistery">
+									Mistery
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="sharp-class.html">
+									<img src="img/sharp-class-img.svg" class="img-fluid small" alt="Classe Sharp"> Sharp
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="stoker-class.html">
+									<img src="img/stoker-class-img.png" class="img-fluid small" alt="Classe Stoker">
+									Stoker
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="strike-class.html">
+									<img src="img/brasao-banguela.png" class="img-fluid small" alt="Classe Strike">
+									Strike
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="tidal-class.html">
+									<img src="img/tidal-class-img.png" class="img-fluid small" alt="Classe Tidal"> Tidal
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="tracker-class.html">
+									<img src="img/tracker-img-bg.svg" class="img-fluid small" alt="Classe Tracker">
+									Tracker
+								</a>
+							</li>
+
+						</ul>
+					</li>
+
+					<!-- Séries -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Séries
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="berkpilots.html">Dragões: Pilotos de Berk</a></li>
+							<li><a class="dropdown-item" href="race-to-the-edge.html">Dragões: Corrida Até o Limite</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Séries fim -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Fim do Nav -->
+
+	<article id="inicio-books">
+
+		<div class="container">
+
+			<!-- Cabeçalho/ Título -->
+			<header class="head-container">
+				<h1>Livros</h1>
+				<p>How to Train Your Dragon é uma série de livros infantojuvenil criados pela escritora Cressida Cowell
+					e lançado pela editora Holden Children's Books em 27 de junho de 2003 no Reino Unido. A série é
+					dividida em quinze livros, com doze lançados, e três extras. No Brasil, a série foi lançada pela
+					Editora Intrínseca.</p>
+			</header>
+
+			<!-- Conteúdo/ Livros... -->
+			<main class="container-content">
+
+				<div class="livros-align">
+
+					<!-- Livro 1 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-1.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro da Franquia de Como Treinar O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 2 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-2.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro um da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 3 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions3"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-3.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro dois da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 4 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions4"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-4.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro três da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 5 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions5"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-5.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro quatro da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 6 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions6"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-6.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro cinco da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 7 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions7"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-7.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro seis da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 8 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions8"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-8.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro sete da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 9 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions9"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-9.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro oito da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 10 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions10"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-10.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro nove da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 11 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions11"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-11.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro dez da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 12 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions12"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-12.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro onze da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 13 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions13"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-13.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro doze da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro 14 -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions14"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/livro-14.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+					<!-- Livro guia -->
+					<a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions15"
+						aria-controls="offcanvasWithBothOptions">
+						<img src="img/guiadasespecies.webp" class="img-fluid rounded img-max-heigh"
+							alt="Livro guia das especies da Franquia de Como Treiarr O Seu Dragão de Cressida Cowell">
+					</a>
+
+				</div>
+
+				
+
+				<!-- Offcanvas LIVRO 1 viking -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+					aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to be a Viking</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q><em>Vikings are brave.</em><br> But Hiccup isn't like other Vikings. He's afraid of
+							everything... including the sea. When
+							Hiccup heads off for his very first ocean voyage, his seasickness is the least of his
+							worries! The Vikings are lost in a terrible storm, and it's up to Hiccup to help them find
+							their way home again.
+							Featuring the beloved main character from the celebrated How to Train Your Dragon series,
+							here's an exciting adventure that shows what it really means to be brave.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 6 maio 2014.<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 32 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 2 httyd -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How To Train Your Dragon</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 3 pirata -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions3" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Be a Pirate</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<p>When Hiccup finds a coffin at sea, he opens it to discover a riddle that will lead to the
+							treasure of Grimbeard the Ghastly, the world's greatest pirate and Hiccup's ancestor. So
+							Hiccup and his friends set out on a treasure hunt, determined to master the art of
+							swordfighting. How else will they escape an island of murderous dragons, defeat a boatload
+							of Viking pirates, and survive all the twists and turns their journey will bring?</p>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 fevereiro 2010.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 240 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 4 dragones -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions4" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Speak Dragonese</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<p>Haddock III was an awesome sword-fighter, a dragon-whisperer and the greatest Viking Hero who
+							ever lived. But it wasn't always like that. Hiccup's memoirs look back to when Hiccup was
+							just an ordinary boy, and finding it very hard to be a Hero. Climbing on to a Roman Dragon
+							Rustling ship by mistake in your first 'Boarding an Enemy Ship' lesson is bad enough. But to
+							then discover that Alvin the Treacherous is also on board proves to Hiccup he couldn't have
+							been more wrong, especially when he steals his copy of How to Speak Dragonese. Can Hiccup
+							save the dragons and the day</p>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Hodder Children's Books<br>
+							<b>Data da publicação:</b> 1 janeiro 2005<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 240 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 5 maldição -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions5" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Cheat a Dragon's Curse
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 6 twist -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions6" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Twist a Dragon's Tale</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 7 heros -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions7" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">A Hero's Guide to Deadly Dragons
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 8 storm -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions8" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Ride a Dragon's Storm</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 9 hearth -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions9" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Break a Dragon's Heart
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 10 sword -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions10" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Steal a Dragon's Sword
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 11 jewel -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions11" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Seize a Dragon's Jewel
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 12 betray -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions12" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Betray a Dragon's Hero
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 13 fury -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions13" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How to Fight a Dragon’s Fury</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 14 journal -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions14" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">How To Train Your Dragon</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+				<!-- Offcanvas LIVRO 15 book -->
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+					id="offcanvasWithBothOptions15" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">The Complete Book of Dragons</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<q>In the book that started it all, Hiccup Horrendous Haddock III, the quiet and thoughtful son
+							of the Chief of the Hairy Hooligans, tries to pass the important initiation test of his
+							Viking clan by catching and training a dragon. Can Hiccup do it without being torn limb from
+							limb? Join his adventures and misadventures as he finds a new way to train dragons--and
+							becomes a hero.</q>
+
+						<h5>
+							<hr>Detalhes
+						</h5>
+
+						<p><br><b>Editora:</b> Little, Brown Books for Young Readers
+							<b>Data da publicação:</b> 1 maio 2004.<br>
+							<b>Edição:</b> Ilustrado<br>
+							<b>Idioma:</b> Inglês<br>
+							<b>Número de páginas:</b> 214 páginas
+						</p>
+
+					</div>
+				</div>
+
+
+			</main>
+		</div>
+
+		<div class="breadcrumb-local">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Início</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Livros</li>
+				</ol>
+			</nav>
+		</div>
+
+	</article>
+
+
+	<footer>
+		<a href="#inicio-books">
+			<button type="button" class="btn btn-outline-danger">Voltar</button>
+		</a>
+		<p><br>Copyright &copy; Soju e Bacana 2025.</p>
+	</footer>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+	<!-- https://ping-xiong.github.io/Dragons-Race-to-the-Edge-Interactive-Map-Backup/#/map -->
+</body>
+
+</html>

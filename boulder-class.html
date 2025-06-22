@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Boulder</title>
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="Dragões, HTTYD, Como Treinar O Seu Dragão, Berk">
+	<meta name="author" content="Júlia Sophia, Sérgio">
+	<link rel="icon" type="image/x-icon" href="img/brasao-dragao.svg">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<style>
+	article {
+		background-image: url(img/gronkel.jpeg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	/* O que deixa o offcanvas com aspecto de livro: */
+	.offcanvas {
+		background-image: url(img/old-book-texture.webp);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		/* A fonte que se parece com a de um livro. */
+	}
+</style>
+
+<body>
+
+	<!-- Início do Nav -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-underline sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<!-- Img da logo no nav -->
+				<img src="img/brasao-berk.png" alt="Logo" width="31" height="auto"
+					class="d-inline-block align-text-top">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="index.html">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="curtas.html">Curtas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cenas-especiais.html">Cenas Especiais</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="books-page.html">Livros</a>
+					</li>
+
+					<!-- Início do dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Filmes
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="filme-um.html">Como Treinar O Seu Dragão</a></li>
+							<li><a class="dropdown-item" href="filme-dois.html">Como Treinar O Seu Dragão 2</a></li>
+							<li><a class="dropdown-item" href="filme-tres.html">Como Treinar O Seu Dragão 3</a></li>
+							<li><a class="dropdown-item" href="filme-live-action.html">Como Treinar O Seu Dragão Live
+									Action</a></li>
+						</ul>
+					</li>
+					<!-- Fim do dropdown -->
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false"  style="color: rgb(172, 3, 3);">
+							Classes
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item active" href="boulder-class.html">
+									<img src="img/boulder-img-bg-dropown.png" class="img-fluid small"
+										alt="Classe Boulder"> Boulder
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="mistery-class.html">
+									<img src="img/mistery-class-img.png" class="img-fluid small" alt="Classe Mistery">
+									Mistery
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="sharp-class.html">
+									<img src="img/sharp-class-img.svg" class="img-fluid small" alt="Classe Sharp"> Sharp
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="stoker-class.html">
+									<img src="img/stoker-class-img.png" class="img-fluid small" alt="Classe Stoker">
+									Stoker
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="strike-class.html">
+									<img src="img/brasao-banguela.png" class="img-fluid small" alt="Classe Strike">
+									Strike
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="tidal-class.html">
+									<img src="img/tidal-class-img.png" class="img-fluid small" alt="Classe Tidal"> Tidal
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="tracker-class.html">
+									<img src="img/tracker-img-bg.svg" class="img-fluid small" alt="Classe Tracker">
+									Tracker
+								</a>
+							</li>
+
+						</ul>
+					</li>
+
+					<!-- Séries -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Séries
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="berkpilots.html">Dragões: Pilotos de Berk</a></li>
+							<li><a class="dropdown-item" href="race-to-the-edge.html">Dragões: Corrida Até o Limite</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Séries fim -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Fim do Nav -->
+
+	<article id="inicio-books">
+
+		<div class="container">
+
+			<div class="head-container titulo-maior">
+				<img src="img/BOULDER-texto.png" class="img-fluid" alt="Classe Boulder">
+
+				<p id="grito-da-morte-id" >Os dragões da Classe Boulder são resistentes e estão associados à terra. Eles podem comer rochas,
+					que
+					muitos deles derretem em seus estômagos e regurgitam como explosões de lava. Embora tenham asas
+					pequenas em comparação com o tamanho do corpo, eles conseguem voar tão rápido e tão alto quanto
+					a
+					maioria dos outros dragões. De acordo com Perna-de-Peixe em A Ascenção de Berk, os dragões da
+					Classe
+					Boulder não
+					são exigentes quando se trata de comida.</p>
+
+				<!-- Button Group -->
+				<div class="btn-group">
+					<a href="#grito-da-morte-id" class="btn btn-outline-light" aria-current="page">Grito da Morte</a>
+					<a href="#eruptidao-id" class="btn btn-outline-light">Eruptidão</a>
+				</div>
+				<div class="btn-group">
+					<a href="#" class="btn btn-outline-light">Destripador Rubro</a>
+					<a href="#" class="btn btn-outline-light">Terremoto Catastrófico</a>
+				</div>
+				<!-- fim Button Group -->
+
+
+			</div>
+
+			<!-- Conteúdo -->
+			<div class="container-content">
+
+				<!-- texto grito da morte -->
+				<img src="img/grito-da-morte-texto.png" class="img-fluid" alt="Grito da Morte texto">
+
+				<div class="double-side">
+					<div>
+						<!-- Imagem do grito da morte -->
+						<img src="img/Grito-da-morte.webp" class="img-fluid" 
+							alt="Grito da Morte">
+					</div>
+
+					<div>
+						<q id="eruptidao-id" > Born every one hundred or so years, the Screaming Death has all the strengths of its
+							subordinate
+							cousin, the Whispering Death, with none of its weaknesses.
+							It is the most powerful dragon Berk has faced since the Red Death. Unlike the Whispering
+							Death,
+							this
+							dragon has no aversion to sunlight. In fact, young Screaming Deaths are drawn to bright
+							light.
+							Attraction to light wears off as the dragon gets older. It shoots large spines from its tail
+							and
+							can
+							breathe massive amounts of fire in a single blast, but the Screaming Death's real strength
+							is
+							its
+							insatiable appetite.
+						</q>
+					</div>
+				</div>
+
+				<div>
+					<!-- Continuação do texto do grito da morte -->
+					<q>Like the Whispering Death, the Screaming Death likes to tunnel,
+						consuming
+						sea
+						stacks and decimating entire islands. An adolescent Screaming Death nearly destroyed the
+						town of
+						Berk, and when it to adulthood, it nearly ate all of Dragon Island (along with five other
+						islands
+						before that). You can't really defeat the Screaming Death. It's too fast, too angry, too
+						powerful.
+						The best you can hope to do is find a way to lure it somewhere else. Screaming Deaths ALWAYS
+						eventually return to their place of birth to nest.
+						Despite the distances that may separate them, Screaming Deaths remain acutely aware of the
+						well-being of their Whispering Death mothers. So if you want to stay on a Screaming Death's
+						good
+						side, don't insult its mother!
+
+					</q>
+				</div>
+
+
+
+
+				<!-- Eruptodon img -->
+				<!-- texto grito da morte -->
+
+
+				<div class="head-container">
+
+					<img src="img/eruptidao-texto.png" class="img-fluid" alt="Eruptidão texto">
+				</div>
+				<div class="container-content">
+					<img src="img/eruptodon-img.png" class="img-fluid" alt="Eruptidão">
+
+					<p>Eruptidões têm um corpo redondo e uma cauda bastante longa. Suas asas são médias e sua cabeça é
+						tão
+						grande quanto seu corpo. Suas pernas dianteiras são muito pequenas comparadas a suas patas
+						traseiras
+						e têm diversos grandes, spiky lobes ao longo de suas partes traseiras e caudas. Seu corpo é
+						coberto
+						com a espessa armadura de rocha vulcânica, feita de lava arrefecida. Seus olhos são protegidos
+						por
+						lentes do tipo óculos de soldador para ajudar a suportar o calor intenso e enxergar a luz
+						incandescente da lava.</p>
+					<p>O Eruptidão é a primeira espécie de dragão conhecida a comer lava. Impede erupções vulcânicas
+						residindo no respiradouro do magma de um vulcão e comendo a lava que transborda. Como tal, Mala
+						e
+						seu povo adoram este dragão por proteger sua aldeia. Ela menciona que o Eruptidão nunca permite
+						que
+						a lava flua muito para baixo, sugerindo que o dragão pode ter um raio protetor em toda a ilha.
+
+						Se um Eruptidão não tem comido por um longo período de tempo, ele vai entrar em um frenesi de
+						alimentação e vai comer qualquer lava que pode encontrar. Se ele não consegue encontrar nenhum
+						pouco, ele vai morrer. Ele não requer um vulcão ativo para comer, como, se suficientemente
+						motivado,
+						ele irá túnel em vulcões dormentes para acessar a lava, causando-lhes a entrar em erupção no
+						processo. Nada, exceto lava em outra direção, vai pará-los, uma vez que eles estão em um frenesi
+						de
+						alimentação.
+					</p>
+				</div>
+
+
+				<!-- Destripador rubro part -->
+				<img src="img/destripador-rubro-texto.png" class="img-fluid" alt="Destripador Rubro">
+
+				<div class="double-side">
+					<p>According to Simon Otto, the Crimson Goregutter is intended to look prehistoric and imposing, but
+						docile at the same time. The antlers were inspired by an extinct species of elk of big
+						proportions known as the Megaloceros. To give the dragon an old aspect, Otto used the skin of a
+						fish, specifically perch.</p>
+
+					<!-- Imagem do grito da morte -->
+					<img src="img/destripador-rubro.png" class="img-fluid" style="max-height: 150px;"
+						alt="Destripador Rubro">
+				</div>
+
+				<p>
+					The Crimson Goregutter's name was revealed at the 2018 Annecy Film Festival preview of How to
+					Train Your Dragon: The Hidden World.
+				</p>
+
+				<!-- Fim destripador rubro -->
+
+				<!-- Parte do Terremoto -->
+				<img src="img/terremoto-catastrofico-texto.png" class="img-fluid" alt="Terremoto Catastrófico">
+
+				<div class="double-side">
+					<img src="img/terremoto-catastrofico.webp" class="img-fluid" alt="Terremoto Catastrófico">
+
+					<p>
+						O Terremoto Catastrófico é um dragão agressivo da classe rocha e o único dragão da classe rocha
+						que
+						pode rolar tanto pra frente quanto pra trás e rolar até para cima ,e parecido com um Gronkel
+						cinza
+						maior com mandíbula e a língua dele é cortada ao meio. Quando sobe, bate rolando no chão e causa
+						terremotos.Ele é um dos dragões mais fortes e pelo que se tem noticia, cospe lava como o
+						Gronckel.
+						Quando rola é capaz de resistir ao pior ataque de um fúria da noite e diferente do gronckel ele
+						é
+						solitário e ao invés de verrugas tem espinhos afiados como seus dentes e só uma de suas escamas
+						é do
+						tamanho das verrugas de um gronckel.
+					</p>
+				</div>
+				<!-- FimParte do Terremoto -->
+			</div>
+		</div>
+
+		<!-- breadcrumb inicio -->
+		<div class="breadcrumb-local">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Início</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Boulder</li>
+				</ol>
+			</nav>
+		</div>
+		<!-- breadcrumb fim -->
+
+
+	</article>
+
+
+	<footer>
+		<a href="#inicio-books">
+			<button type="button" class="btn btn-outline-danger">Voltar</button>
+		</a>
+		<p><br>Copyright &copy; Soju e Bacana 2025.</p>
+	</footer>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+	<!-- https://ping-xiong.github.io/Dragons-Race-to-the-Edge-Interactive-Map-Backup/#/map -->
+</body>
+
+</html>

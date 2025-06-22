@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Cursive é uma ótima opção de fonte */
+  font-family: cursive;
+  color: white;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.small {
+  height: 20px;
+  width: auto;
+}
+
+
+/* berk filme 1 background */
+.bg1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/berk-movie-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+/* berk filme 2 background */
+.bg2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/berk-img-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+/* berk filme 3 background */
+.bg3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/berk-movie-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.breadcrumb-local {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  padding-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 2%;
+  /* Esse 0.4 é o que controla a opacidade do retângulo preto a frente de berk */
+  background-color: rgba(0, 0, 0, 0.5);
+  gap: 50px;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(226, 103, 103, 0.5);
+  padding: 30px;
+}
+
+.titulo-maior {
+  height: 100%;
+  width: auto;
+}
+
+/* Tmb afeta o offcanvas */
+.container-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgba(66, 201, 95, 0.5);
+  padding: 30px;
+}
+
+hr{
+  border: 5px solid white;
+  border-radius: 5px;
+}
+.img-max-heigh {
+  max-height: 300px;
+  width: auto;
+}
+
+.img-max-heigh2 {
+  height: 220px;
+  width: auto;
+}
+
+.livros-align {
+  display: flex;
+  background-color: rgba(85, 122, 243, 0.5);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.double-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(211, 23, 201, 0.5);
+  justify-content: center;
+  gap: 30px;
+}
+
+.double-side2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+   background-color: rgba(216, 85, 10, 0.5);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(18, 22, 31);
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+  
+}
+
+
+.my-hover-footer:hover {
+  color: red;
+}
+
+.books-descripition {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .double-side {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+   .double-side2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
