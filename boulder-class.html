@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Boulder</title>
+	<title>Mystery</title>
 	<meta name="description" content="Free Web tutorials">
 	<meta name="keywords" content="Dragões, HTTYD, Como Treinar O Seu Dragão, Berk">
 	<meta name="author" content="Júlia Sophia, Sérgio">
@@ -15,35 +15,31 @@
 </head>
 
 <style>
-	article {
-		background-image: url(img/gronkel.jpeg);
+	body {
+		background-image: url(img/fundomystery.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
 	}
 
-	/* O que deixa o offcanvas com aspecto de livro: */
-	.offcanvas {
-		background-image: url(img/old-book-texture.webp);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		font-family: Georgia, 'Times New Roman', Times, serif;
-		/* A fonte que se parece com a de um livro. */
+	.accordion-button:hover {
+		background-color: #33393f;
+	}
+
+	.card {
+		text-align: center;
 	}
 </style>
 
-<body>
+<body data-bs-theme="dark">
 
 	<!-- Início do Nav -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-underline sticky-top">
+	<nav class="navbar navbar-expand-lg bg-dark nav-underline fixed-top" data-bs-theme="dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="#">
 				<!-- Img da logo no nav -->
-				<img src="img/brasao-berk.png" alt="Logo" width="31" height="auto"
-					class="d-inline-block align-text-top">
-			</a>
+				<img src="img/brasaoberk.svg" style="max-height: 40px;"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -81,7 +77,7 @@
 
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false"  style="color: rgb(172, 3, 3);">
+							aria-expanded="false">
 							Classes
 						</a>
 						<ul class="dropdown-menu">
@@ -92,9 +88,9 @@
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="mistery-class.html">
-									<img src="img/mistery-class-img.png" class="img-fluid small" alt="Classe Mistery">
-									Mistery
+								<a class="dropdown-item" href="mystery-class.html">
+									<img src="img/mistery-class-img.png" class="img-fluid small" alt="Classe Mystery">
+									Mystery
 								</a>
 							</li>
 							<li>
@@ -147,204 +143,673 @@
 		</div>
 	</nav>
 	<!-- Fim do Nav -->
-
-	<article id="inicio-books">
+	<article id="inicio" style="padding-top: 80px;">
 
 		<div class="container">
 
-			<div class="head-container titulo-maior">
-				<img src="img/BOULDER-texto.png" class="img-fluid" alt="Classe Boulder">
-
-				<p id="grito-da-morte-id" >Os dragões da Classe Boulder são resistentes e estão associados à terra. Eles podem comer rochas,
-					que
-					muitos deles derretem em seus estômagos e regurgitam como explosões de lava. Embora tenham asas
-					pequenas em comparação com o tamanho do corpo, eles conseguem voar tão rápido e tão alto quanto
-					a
-					maioria dos outros dragões. De acordo com Perna-de-Peixe em A Ascenção de Berk, os dragões da
-					Classe
-					Boulder não
-					são exigentes quando se trata de comida.</p>
-
-				<!-- Button Group -->
-				<div class="btn-group">
-					<a href="#grito-da-morte-id" class="btn btn-outline-light" aria-current="page">Grito da Morte</a>
-					<a href="#eruptidao-id" class="btn btn-outline-light">Eruptidão</a>
+			<div class="double-side">
+				<div class="card" style="width: 30rem;">
+					<img src="img/terremoto-catastrofico.webp" class="card-img-top img-fluid" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Terremoto Catastrófico</h5>
+						<q class="card-text">Quando foi a última vez que você viu uma pedra rolando morro acima?</q>
+					</div>
 				</div>
-				<div class="btn-group">
-					<a href="#" class="btn btn-outline-light">Destripador Rubro</a>
-					<a href="#" class="btn btn-outline-light">Terremoto Catastrófico</a>
+				<div id="carouselExampleIndicators" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+							class="active" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/terremoto-catastrofico-um.jpg" class="d-block w-100 img-fluid" style="max-width: 686px;"
+								alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/terremoto-catastrofico-dois.webp" class="d-block w-100 img-fluid" style="max-width: 686px;"
+								alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/terremoto-catastrofico-tres.jpg" class="d-block w-100 img-fluid" style="max-width: 686px;"
+								alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
 				</div>
-				<!-- fim Button Group -->
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto5()">Descrições</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto6()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto7()">Habilidades</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
+				</div>
 
+				<div class="mt-4">
+					<div id="texto-dinamico" class="fs-5"></div>
+				</div>
+
+			</div>
+			<div id="liveAlertPlaceholder" style="padding-top: 15px;"></div>
+			<button type="button" class="btn btn-danger" id="liveAlertBtn">PERIGO: MORTAL</button>
+			<h1 style="padding-top: 15px;">Aparições</h1>
+			<div class="accordion" id="accordionExample" data-bs-theme="dark">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#1" aria-expanded="true" aria-controls="collapseOne">
+							Harmonia Imperfeita
+						</button>
+					</h2>
+					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p>Em "Harmonia Imperfeita", a turma tropeça em uma ilha onde passa a noite, apenas para
+								acordar e descobrir que todos os seus dragões desapareceram. Apenas Banguela , devido à
+								sua incapacidade de voar, permanece. Ele rapidamente leva a turma a uma enseada, onde
+								encontram muitos dragões, incluindo os seus, presos em âmbar. Logo eles ouvem o chamado
+								da Canção da Morte e uma Canção da Morte selvagem emerge. Ela cuidadosamente pega um
+								dragão, devora-o em segundos (fora da tela) e então retorna, cuspindo âmbar em todos
+								eles. Apenas Soluço escapa, tendo sido salvo por Astrid . Ele rapidamente encontra ajuda
+								e treina um Tambor do Trovão , que é imune ao chamado da Canção da Morte. Juntos, ateiam
+								fogo ao âmbar usando o gel Pesadelo Monstruoso e, em seguida, atraem a Canção da Morte
+								para longe da enseada, dando aos outros tempo para escapar. Enquanto o resto da equipe
+								ajuda a libertar os outros dragões, Soluço atrai a Canção da Morte para uma caverna
+								apertada e a aprisiona lá dentro. Mais tarde, ele escapa da tela.</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
+							Tone Death
+						</button>
+					</h2>
+					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Em "Tone Death", os Cavaleiros de Dragão resgatam um ovo dos Caçadores de Dragões . O
+								ovo choca e revela um bebê Canção da Morte chamado Garffiljorg . Embora a maioria deles
+								o ache adorável, Garff não consegue parar de chorar e cospe âmbar em Chicken . Heather
+								decide cantar para Garff, finalmente o tranquilizando. Ao longo do dia seguinte, os
+								cavaleiros se revezam para cantar para o filhote. No entanto, seus esforços se mostram
+								inúteis, e eles decidem levar Garff para a Ilha da Melodia para ser cuidado por outros
+								Canções da Morte. No entanto, no momento em que chegam à enseada, a Canção da Morte
+								adulta embosca e prende os cavaleiros. Garff e o adulto gradualmente começam a se
+								conectar, mas quando começam a cantar, o adulto rapidamente afasta o bebê, pois ele não
+								gosta de seu canto. Os cavaleiros percebem que Garff estava cantando todas as suas
+								canções, em vez do chamado da Canção da Morte. A Canção da Morte adulta ataca os
+								cavaleiros, que imediatamente começam a cantar, e Garff os imita. O adulto finalmente
+								cria laços com Garff e vai embora com ele.</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#3" aria-expanded="false" aria-controls="collapseTwo">
+							Vivendo no Limite
+						</button>
+					</h2>
+					<div id="3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Em "Vivendo no Limite", Astrid e Soluço descobrem que Garff está ferido e que seu pai
+								adotivo está desaparecido. Mais tarde, é revelado que o pai adotivo de Garff está sendo
+								mantido em cativeiro por Krogan e usado para atrair e capturar dragões selvagens com
+								facilidade.</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#4" aria-expanded="false" aria-controls="collapseTwo">
+							Family Matters
+						</button>
+					</h2>
+					<div id="4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Em "Family Matters", os Cavaleiros de Dragão descobrem âmbar da Canção da Morte em um
+								Singetail. Eles decidem ir ver Garff. Astrid decide que ele os acompanha de volta à
+								Borda em uma missão, que sai pela culatra quando Garff descobre que seu pai adotivo está
+								acorrentado e também é capturado em sua tentativa de libertá-lo. No final, eles são
+								libertados e reencontrados.</q>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto1()">Descrições</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto2()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto3()">habilidades</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
+				</div>
+
+				<div class="mt-4">
+					<div id="texto-dinamico" class="fs-5"></div>
+				</div>
 
 			</div>
 
-			<!-- Conteúdo -->
-			<div class="container-content">
-
-				<!-- texto grito da morte -->
-				<img src="img/grito-da-morte-texto.png" class="img-fluid" alt="Grito da Morte texto">
-
-				<div class="double-side">
-					<div>
-						<!-- Imagem do grito da morte -->
-						<img src="img/Grito-da-morte.webp" class="img-fluid" 
-							alt="Grito da Morte">
-					</div>
-
-					<div>
-						<q id="eruptidao-id" > Born every one hundred or so years, the Screaming Death has all the strengths of its
-							subordinate
-							cousin, the Whispering Death, with none of its weaknesses.
-							It is the most powerful dragon Berk has faced since the Red Death. Unlike the Whispering
-							Death,
-							this
-							dragon has no aversion to sunlight. In fact, young Screaming Deaths are drawn to bright
-							light.
-							Attraction to light wears off as the dragon gets older. It shoots large spines from its tail
-							and
-							can
-							breathe massive amounts of fire in a single blast, but the Screaming Death's real strength
-							is
-							its
-							insatiable appetite.
-						</q>
+			<div style="padding-top: 40px;"></div>
+			<div class="double-side">
+				<div class="card" style="width: 28rem;">
+					<img src="img/transformasa.webp" class="card-img-top img-fluid" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Canção da Morte</h5>
+						<p class="card-text"> Transformação. Até dragões recém-nascidos podem espirrar ácido.</p>
 					</div>
 				</div>
-
-				<div>
-					<!-- Continuação do texto do grito da morte -->
-					<q>Like the Whispering Death, the Screaming Death likes to tunnel,
-						consuming
-						sea
-						stacks and decimating entire islands. An adolescent Screaming Death nearly destroyed the
-						town of
-						Berk, and when it to adulthood, it nearly ate all of Dragon Island (along with five other
-						islands
-						before that). You can't really defeat the Screaming Death. It's too fast, too angry, too
-						powerful.
-						The best you can hope to do is find a way to lure it somewhere else. Screaming Deaths ALWAYS
-						eventually return to their place of birth to nest.
-						Despite the distances that may separate them, Screaming Deaths remain acutely aware of the
-						well-being of their Whispering Death mothers. So if you want to stay on a Screaming Death's
-						good
-						side, don't insult its mother!
-
-					</q>
+				<div id="12" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#12" data-bs-slide-to="0" class="active"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#12" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#12" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/char3.png" class="d-block w-100 img-fluid"
+								style="max-height: 479px; max-width: 686px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/char2.jpg" class="d-block w-100 img-fluid"
+								style="max-height: 479px; max-width: 686px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/char1.jpg" class="d-block w-100 img-fluid"
+								style="max-height: 479px; max-width: 686px;" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#12" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#12" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</div>
+			<h1 style="padding-top: 15px;">Aparições</h1>
+			<div class="accordion" id="accordionExample" data-bs-theme="dark">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#6" aria-expanded="true" aria-controls="collapseOne">
+							Joia de uma Cor Diferente
+						</button>
+					</h2>
+					<div id="6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>No episódio "Joia de uma Cor Diferente", os Asas-Muda foram encontrados em uma ilha .
+								Perna-de-Peixe , em sua própria ilha "secreta", encontra uma estranha joia brilhante
+								enquanto está com seu amado dragão, Meatlug . Levando-a de volta para Berk , Bocão a
+								identifica como uma "Pedra da Boa Sorte" (pois Bocão confunde "Pedras da Boa Sorte" com
+								ovos de dragão Asa-Muda), fazendo com que os cidadãos se aglomerem em Perna-de-Peixe,
+								oferecendo-lhe trocas valiosas. Oprimido, Perna-de-Peixe, após se recusar a entregá-la a
+								Melequento , pede a Soluço que o ajude a devolvê-la, para que ele possa esquecê-la
+								completamente.</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#7" aria-expanded="false" aria-controls="collapseTwo">
+							Somos uma Família - Parte 1
+						</button>
+					</h2>
+					<div id="7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Em "Somos uma Família - Parte 1", um Mutante selvagem foi encontrado escondido na
+								entrada da caverna de Bork e "manteve Melequento como refém" até Soluço libertá-lo. Os
+								Párias mantinham um deles em uma gaiola em sua ilha , que, juntamente com uma Morte
+								Sussurrante e um Caldeirão enjaulados , foi posteriormente usada em um ataque a Soluço,
+								Mofo e Tempestade de Moscas .</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#1" aria-expanded="false" aria-controls="collapseTwo">
+							Free Scauldy
+						</button>
+					</h2>
+					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Em "Free Scauldy", enquanto procuravam pela Morte Gritante , Soluço, Perna-de-Peixe e
+								os Gêmeos descobriram um Caldeirão que havia sido levado pela correnteza até a Ilha da
+								Asa Transformada e estava preso por uma asa sob uma pilha de pedras. Apesar da ameaça
+								representada pelos Asas Transformadas, seus dragões se recusaram a deixar o Caldeirão
+								morrer de desidratação, forçando Ruffnut a domar o dragão — que ela chamou de Scauldy —
+								para que os outros pudessem remover as pedras e fazer uma tala para a asa
+								danificada.</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
+							Harmonia Imperfeita
+						</button>
+					</h2>
+					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Em "Harmonia Imperfeita", depois que os dragões desaparecem, Melequento começa a
+								reclamar e diz sarcasticamente a Soluço se há algo que ele queira atrair para eles, como
+								um Asa Transformadora ou uma Morte Gritante.</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="padding-top: 40px;"></div>
+			<div class="double-side">
+				<div class="card" style="width: 30rem;">
+					<img src="img/bone.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Rouba Ossos</h5>
+						<p class="card-text"></p>
+					</div>
+				</div>
+				<div id="13" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#13" data-bs-slide-to="0" class="active"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#13" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#13" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/bone1.webp" class="d-block w-100 img-fluid"
+								style="max-height: 321px; max-width: 477px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/bone2.webp" class="d-block w-100 img-fluid"
+								style="max-height: 321px; max-width: 477px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/bone3.jpg" class="d-block w-100 img-fluid"
+								style="max-height: 321px; max-width: 477px;" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#13" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#13" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto1()">Descrições</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto2()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto3()">habilidades</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
 				</div>
 
-
-
-
-				<!-- Eruptodon img -->
-				<!-- texto grito da morte -->
-
-
-				<div class="head-container">
-
-					<img src="img/eruptidao-texto.png" class="img-fluid" alt="Eruptidão texto">
-				</div>
-				<div class="container-content">
-					<img src="img/eruptodon-img.png" class="img-fluid" alt="Eruptidão">
-
-					<p>Eruptidões têm um corpo redondo e uma cauda bastante longa. Suas asas são médias e sua cabeça é
-						tão
-						grande quanto seu corpo. Suas pernas dianteiras são muito pequenas comparadas a suas patas
-						traseiras
-						e têm diversos grandes, spiky lobes ao longo de suas partes traseiras e caudas. Seu corpo é
-						coberto
-						com a espessa armadura de rocha vulcânica, feita de lava arrefecida. Seus olhos são protegidos
-						por
-						lentes do tipo óculos de soldador para ajudar a suportar o calor intenso e enxergar a luz
-						incandescente da lava.</p>
-					<p>O Eruptidão é a primeira espécie de dragão conhecida a comer lava. Impede erupções vulcânicas
-						residindo no respiradouro do magma de um vulcão e comendo a lava que transborda. Como tal, Mala
-						e
-						seu povo adoram este dragão por proteger sua aldeia. Ela menciona que o Eruptidão nunca permite
-						que
-						a lava flua muito para baixo, sugerindo que o dragão pode ter um raio protetor em toda a ilha.
-
-						Se um Eruptidão não tem comido por um longo período de tempo, ele vai entrar em um frenesi de
-						alimentação e vai comer qualquer lava que pode encontrar. Se ele não consegue encontrar nenhum
-						pouco, ele vai morrer. Ele não requer um vulcão ativo para comer, como, se suficientemente
-						motivado,
-						ele irá túnel em vulcões dormentes para acessar a lava, causando-lhes a entrar em erupção no
-						processo. Nada, exceto lava em outra direção, vai pará-los, uma vez que eles estão em um frenesi
-						de
-						alimentação.
-					</p>
+				<div class="mt-4">
+					<div id="texto-dinamico" class="fs-5"></div>
 				</div>
 
-
-				<!-- Destripador rubro part -->
-				<img src="img/destripador-rubro-texto.png" class="img-fluid" alt="Destripador Rubro">
-
-				<div class="double-side">
-					<p>According to Simon Otto, the Crimson Goregutter is intended to look prehistoric and imposing, but
-						docile at the same time. The antlers were inspired by an extinct species of elk of big
-						proportions known as the Megaloceros. To give the dragon an old aspect, Otto used the skin of a
-						fish, specifically perch.</p>
-
-					<!-- Imagem do grito da morte -->
-					<img src="img/destripador-rubro.png" class="img-fluid" style="max-height: 150px;"
-						alt="Destripador Rubro">
+			</div>
+			<h1 style="padding-top: 15px;">Aparições</h1>
+			<div class="accordion" id="accordionExample" data-bs-theme="dark">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							a
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							a
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#1" aria-expanded="false" aria-controls="collapseTwo">
+							a
+						</button>
+					</h2>
+					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
+							a
+						</button>
+					</h2>
+					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							a
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="padding-top: 40px;"></div>
+			<div class="double-side">
+				<div class="card" style="width: 30rem;">
+					<img src="img/drami.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Dramilhão</h5>
+						<p class="card-text"></p>
+					</div>
+				</div>
+				<div id="14" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#14" data-bs-slide-to="0" class="active"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#14" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#14" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/drami4.jpg" class="d-block w-100 img-fluid"
+								style="max-height: 1000px; max-width: 686px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/drami1.jpg" class="d-block w-100 img-fluid"
+								style="max-height: 1000px; max-width: 686px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/drami2.jpg" class="d-block w-100 img-fluid"
+								style="max-height: 1000px; max-width: 686px;" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#14" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#14" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto1()">Descrições</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto2()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto3()">habilidades</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
 				</div>
 
-				<p>
-					The Crimson Goregutter's name was revealed at the 2018 Annecy Film Festival preview of How to
-					Train Your Dragon: The Hidden World.
-				</p>
-
-				<!-- Fim destripador rubro -->
-
-				<!-- Parte do Terremoto -->
-				<img src="img/terremoto-catastrofico-texto.png" class="img-fluid" alt="Terremoto Catastrófico">
-
-				<div class="double-side">
-					<img src="img/terremoto-catastrofico.webp" class="img-fluid" alt="Terremoto Catastrófico">
-
-					<p>
-						O Terremoto Catastrófico é um dragão agressivo da classe rocha e o único dragão da classe rocha
-						que
-						pode rolar tanto pra frente quanto pra trás e rolar até para cima ,e parecido com um Gronkel
-						cinza
-						maior com mandíbula e a língua dele é cortada ao meio. Quando sobe, bate rolando no chão e causa
-						terremotos.Ele é um dos dragões mais fortes e pelo que se tem noticia, cospe lava como o
-						Gronckel.
-						Quando rola é capaz de resistir ao pior ataque de um fúria da noite e diferente do gronckel ele
-						é
-						solitário e ao invés de verrugas tem espinhos afiados como seus dentes e só uma de suas escamas
-						é do
-						tamanho das verrugas de um gronckel.
-					</p>
+				<div class="mt-4">
+					<div id="texto-dinamico" class="fs-5"></div>
 				</div>
-				<!-- FimParte do Terremoto -->
+
+			</div>
+			<h1 style="padding-top: 15px;">Aparições</h1>
+			<div class="accordion" id="accordionExample" data-bs-theme="dark">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							a
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							a
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#1" aria-expanded="false" aria-controls="collapseTwo">
+							a
+						</button>
+					</h2>
+					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
+							a
+						</button>
+					</h2>
+					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							a
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="padding-top: 40px;"></div>
+			<div class="double-side">
+				<div class="card" style="width: 25rem;">
+					<img src="img/buf.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Canção da Morte</h5>
+						<p class="card-text"></p>
+					</div>
+				</div>
+				<div id="15" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#15" data-bs-slide-to="0" class="active"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#15" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#15" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/buf1.jpg" class="d-block w-100 img-fluid"
+								style="max-height: 479px; max-width: 686px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/buf2.webp" class="d-block w-100 img-fluid"
+								style="max-height: 479px; max-width: 686px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/buf3.webp" class="d-block w-100 img-fluid"
+								style="max-height: 479px; max-width: 686px;" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#15" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#15" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto1()">Descrições</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto2()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto3()">habilidades</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
+				</div>
+
+				<div class="mt-4">
+					<div id="texto-dinamico" class="fs-5"></div>
+				</div>
+
+			</div>
+			<h1 style="padding-top: 15px;">Aparições</h1>
+			<div class="accordion" id="accordionExample" data-bs-theme="dark">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							a
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							a
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#1" aria-expanded="false" aria-controls="collapseTwo">
+							a
+						</button>
+					</h2>
+					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
+							a
+						</button>
+					</h2>
+					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							a
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q></q>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<!-- breadcrumb inicio -->
-		<div class="breadcrumb-local">
-			<nav aria-label="breadcrumb">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Início</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Boulder</li>
-				</ol>
-			</nav>
 		</div>
-		<!-- breadcrumb fim -->
-
-
 	</article>
 
-
 	<footer>
-		<a href="#inicio-books">
+		<a href="#">
 			<button type="button" class="btn btn-outline-danger">Voltar</button>
 		</a>
 		<p><br>Copyright &copy; Soju e Bacana 2025.</p>
 	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/alerta.js"></script>
+	<script src="js/smoothScroll.js"></script>
+	<script src="js/button.js"></script>
 
 	<!-- https://ping-xiong.github.io/Dragons-Race-to-the-Edge-Interactive-Map-Backup/#/map -->
 </body>
