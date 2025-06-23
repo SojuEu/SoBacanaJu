@@ -24,16 +24,15 @@
 	}
 </style>
 
-<body>
+<body data-bs-theme="dark">
 
 	<!-- Início do Nav -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-underline sticky-top">
+	<nav class="navbar navbar-expand-lg bg-dark nav-underline sticky-top">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="#">
 				<!-- Img da logo no nav -->
-				<img  src="img/brasaoberk.svg" style="max-height: 40px;" alt="Logo" 
-					class="d-inline-block align-text-top">
-			</a>
+				<img src="img/brasaoberk.svg" style="max-height: 40px;"
+					class="d-inline-block align-text-top img-fluid"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -41,9 +40,9 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav ">
 					<li class="nav-item">
-						<a class="nav-link " aria-current="page" href="index.html">Início</a>
+						<a class="nav-link" href="index.html">Início</a>
 					</li>
-					<li class="nav-item ">
+					<li class="nav-item">
 						<a class="nav-link" href="curtas.html">Curtas</a>
 					</li>
 					<li class="nav-item">
@@ -52,23 +51,21 @@
 					<li class="nav-item">
 						<a class="nav-link" href="books-page.html">Livros</a>
 					</li>
-
 					<!-- Início do dropdown -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false"  style="color: rgb(172, 3, 3);">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
 							Filmes
 						</a>
-						<ul class="dropdown-menu" >
+						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="filme-um.html">Como Treinar O Seu Dragão</a></li>
-							<li><a class="dropdown-item active" href="filme-dois.html" >Como Treinar O Seu Dragão 2</a></li>
+							<li><a class="dropdown-item" aria-current="page" style="color: rgb(218, 0, 0);" href="filme-dois.html">Como Treinar O Seu Dragão 2</a></li>
 							<li><a class="dropdown-item" href="filme-tres.html">Como Treinar O Seu Dragão 3</a></li>
 							<li><a class="dropdown-item" href="filme-live-action.html">Como Treinar O Seu Dragão Live
 									Action</a></li>
 						</ul>
 					</li>
 					<!-- Fim do dropdown -->
-
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 							aria-expanded="false">
@@ -82,9 +79,9 @@
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="mistery-class.html">
-									<img src="img/mistery-class-img.png" class="img-fluid small" alt="Classe Mistery">
-									Mistery
+								<a class="dropdown-item" href="mystery-class.html">
+									<img src="img/mistery-class-img.png" class="img-fluid small" alt="Classe Mystery">
+									Mystery
 								</a>
 							</li>
 							<li>
@@ -115,7 +112,6 @@
 									Tracker
 								</a>
 							</li>
-
 						</ul>
 					</li>
 
@@ -127,7 +123,8 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="berkpilots.html">Dragões: Pilotos de Berk</a></li>
-							<li><a class="dropdown-item" href="berkpilots.html">Dragões: Corrida Até o Limite</a></li>
+							<li><a class="dropdown-item" href="race-to-the-edge.html">Dragões: Corrida Até o Limite</a>
+							</li>
 						</ul>
 					</li>
 					<!-- Séries fim -->
@@ -191,6 +188,7 @@
 	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/javascript.js"></script>
 
 </body>
 

@@ -30,22 +30,22 @@
 		background-size: cover;
 		background-position: center;
 		font-family: Georgia, 'Times New Roman', Times, serif;
+		color: black;
 		/* A fonte que se parece com a de um livro. */
 	}
 
 	
 </style>
 
-<body>
+<body data-bs-theme="dark">
 
 	<!-- Início do Nav -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-underline sticky-top">
+	<nav class="navbar navbar-expand-lg bg-dark nav-underline sticky-top">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="#">
 				<!-- Img da logo no nav -->
-				<img src="img/brasao-berk.png" alt="Logo" width="31" height="auto"
-					class="d-inline-block align-text-top">
-			</a>
+				<img src="img/brasaoberk.svg" style="max-height: 40px;"
+					class="d-inline-block align-text-top img-fluid"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav ">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="index.html">Início</a>
+						<a class="nav-link" href="index.html">Início</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="curtas.html">Curtas</a>
@@ -62,9 +62,8 @@
 						<a class="nav-link" href="cenas-especiais.html">Cenas Especiais</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="books-page.html" style="color: rgb(172, 3, 3);">Livros</a>
+						<a class="nav-link active" aria-current="page" style="color: rgb(218, 0, 0);" href="books-page.html">Livros</a>
 					</li>
-
 					<!-- Início do dropdown -->
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -80,7 +79,6 @@
 						</ul>
 					</li>
 					<!-- Fim do dropdown -->
-
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 							aria-expanded="false">
@@ -94,9 +92,9 @@
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="mistery-class.html">
-									<img src="img/mistery-class-img.png" class="img-fluid small" alt="Classe Mistery">
-									Mistery
+								<a class="dropdown-item" href="mystery-class.html">
+									<img src="img/mistery-class-img.png" class="img-fluid small" alt="Classe Mystery">
+									Mystery
 								</a>
 							</li>
 							<li>
@@ -127,7 +125,6 @@
 									Tracker
 								</a>
 							</li>
-
 						</ul>
 					</li>
 
@@ -730,6 +727,7 @@
 	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/javascript.js"></script>
 
 	<!-- https://ping-xiong.github.io/Dragons-Race-to-the-Edge-Interactive-Map-Backup/#/map -->
 </body>
