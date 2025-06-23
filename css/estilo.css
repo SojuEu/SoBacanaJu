@@ -2,9 +2,13 @@
   box-sizing: border-box;
 }
 
+.navbar {
+    transition: top 0.3s;
+}
+
 body {
   /* Cursive é uma ótima opção de fonte */
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-align: justify;
   display: flex;
