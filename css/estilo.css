@@ -153,6 +153,7 @@ footer {
   padding: 20px;
   gap: 10px;
   text-align: center;
+  justify-content: center;
   align-items: center;
   color: white;
   
