@@ -3,11 +3,12 @@
 }
 
 .navbar {
+  /* Transição suave do scroll */
     transition: top 0.3s;
 }
 
 body {
-  /* Cursive é uma ótima opção de fonte */
+  /* Cursive é uma ótima opção de fonte para carta e afins */
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-align: justify;
@@ -84,7 +85,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  background-color: rgb(235, 57, 175);
   padding: 30px;
 }
 
@@ -100,7 +100,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
- background-color: rgb(30, 90, 231);
   padding: 30px;
 }
 
