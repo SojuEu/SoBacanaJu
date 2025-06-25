@@ -161,7 +161,7 @@ footer {
   align-items: center;
   color: white;
   /* O mini Banguela no footer do index */
-  background-image: url(/img/toothless-img-meme.png);
+  background-image: url(../img/toothless-img-meme.png);
   background-repeat: no-repeat;
   background-size: 100px;
   background-position: left bottom;
