@@ -22,14 +22,6 @@
 		background-position: center;
 		background-attachment: fixed;
 	}
-
-	.accordion-button:hover {
-		background-color: #33393f;
-	}
-
-	.card {
-		text-align: center;
-	}
 </style>
 
 <body data-bs-theme="dark">
@@ -142,7 +134,7 @@
 		</div>
 	</nav>
 	<!-- Fim do Nav -->
-	<article id="inicio" style="padding-top: 20px; margin-bottom: 20px;">
+	<article class="diferent-article">
 
 		<div class="container">
 
@@ -714,11 +706,19 @@
 	</article>
 
 	<footer>
-		<a href="#">
-			<button type="button" class="btn btn-outline-danger">Voltar</button>
+
+		<a class="icon-link icon-link-hover link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+			style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">
+			Voltar ao início
+			<svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+				<path
+					d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+			</svg>
 		</a>
-		<p><br>Copyright &copy; Soju e Bacana 2025.</p>
+
+		<p>Copyright &copy; Soju e Bacana 2025.</p>
 	</footer>
+
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/javascript.js"></script>
