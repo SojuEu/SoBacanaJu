@@ -33,16 +33,14 @@
 		color: black;
 		/* A fonte que se parece com a de um livro. */
 	}
-
-	
 </style>
 
-<body data-bs-theme="dark"  id="inicio-books">
+<body data-bs-theme="dark" id="inicio-books">
 
 	<!-- Início do Nav -->
 	<nav class="navbar navbar-expand-lg bg-dark nav-underline sticky-top">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="index.html">
 				<!-- Img da logo no nav -->
 				<img src="img/brasaoberk.svg" style="max-height: 40px;"
 					class="d-inline-block align-text-top img-fluid"></a>
@@ -62,7 +60,8 @@
 						<a class="nav-link" href="cenas-especiais.html">Cenas Especiais</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" style="color: rgb(218, 0, 0);" href="books-page.html">Livros</a>
+						<a class="nav-link active" aria-current="page" style="color: rgb(218, 0, 0);"
+							href="books-page.html">Livros</a>
 					</li>
 					<!-- Início do dropdown -->
 					<li class="nav-item dropdown">
@@ -150,6 +149,13 @@
 	<article>
 
 		<div class="container">
+
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a class="link-danger" href="index.html">Início</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Livros</li>
+				</ol>
+			</nav>
 
 			<!-- Cabeçalho/ Título -->
 			<header class="head-container">
@@ -272,7 +278,7 @@
 
 				</div>
 
-				
+
 
 				<!-- Offcanvas LIVRO 1 viking -->
 				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
@@ -707,14 +713,7 @@
 			</main>
 		</div>
 
-		<div class="breadcrumb-local">
-			<nav aria-label="breadcrumb">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Início</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Livros</li>
-				</ol>
-			</nav>
-		</div>
+
 
 	</article>
 

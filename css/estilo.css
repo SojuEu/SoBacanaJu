@@ -16,11 +16,26 @@ body {
   flex-direction: column;
 }
 
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* O article especifico do index já que ele tem 3 divs de bg */
+.diferent-article{
+  display:contents;
+}
+
 .small {
   height: 20px;
   width: auto;
 }
 
+.breadcrumb{
+  display: flex;
+  justify-content: center;
+}
 
 /* berk filme 1 background */
 .bg1 {
@@ -64,17 +79,12 @@ body {
 
 }
 
-.breadcrumb-local {
-  background-color: white;
-  width: 100%;
-  display: flex;
-  padding-top: 15px;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .container {
   padding: 2%;
+  margin: 20px;
+  border-radius: 35px;
   /* Esse 0.4 é o que controla a opacidade do retângulo preto a frente de berk */
   background-color: rgba(0, 0, 0, 0.5);
   gap: 50px;
@@ -86,7 +96,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 30px;
+  padding: 10px;
 }
 
 .titulo-maior {
