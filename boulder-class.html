@@ -16,7 +16,7 @@
 
 <style>
 	body {
-		background-image: url(img/fundomystery.jpg);
+		background-image: url(img/gronkel.jpeg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -32,7 +32,7 @@
 	}
 </style>
 
-<body data-bs-theme="dark" id="inicio-boulder">
+<body data-bs-theme="dark">
 
 	<!-- Início do Nav -->
 	<nav class="navbar navbar-expand-lg bg-dark nav-underline sticky-top">
@@ -75,14 +75,16 @@
 					</li>
 					<!-- Fim do dropdown -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false">
+						<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false" style="color: rgb(218, 0, 0);">
 							Classes
 						</a>
 						<ul class="dropdown-menu">
 							<li>
-								<a class="dropdown-item" aria-current="page" style="color: rgb(218, 0, 0);" href="boulder-class.html">
-									<img src="img/boulder-img-bg-dropown.png" class="img-fluid small" alt="Classe Boulder"> Boulder
+								<a class="dropdown-item" aria-current="page" style="color: rgb(218, 0, 0);"
+									href="boulder-class.html">
+									<img src="img/boulder-img-bg-dropown.png" class="img-fluid small"
+										alt="Classe Boulder"> Boulder
 								</a>
 							</li>
 							<li>
@@ -140,14 +142,19 @@
 		</div>
 	</nav>
 	<!-- Fim do Nav -->
-	<article style="padding-top: 80px;">
-
-		<div class="container">
-
-			
+	<article id="inicio" style="padding-top: 20px; margin-bottom: 20px;">
+		<div class="container rounded">
+			<div class="text-center" style="padding: 15px;">
+				<img src="img/BOULDER-texto.png" alt="">
+			</div>
+			<p style="padding: 30px;">Os dragões da classe Boulder são resistentes e associados à terra. Eles podem
+				comer pedras, que muitas delas derretem em seus estômagos e regurgitam como explosões de lava. Embora
+				tenham asas pequenas em comparação com o tamanho do corpo, são capazes de voar tão rápido e tão alto
+				quanto a maioria dos outros dragões. De acordo com Fishlegs em Rise of Berk , os dragões da classe
+				Boulder não são exigentes com a comida.</p>
 			<div class="double-side">
-				<div class="card" style="width: 30rem;">
-					<img src="img/terremoto-catastrofico.webp" class="card-img-top img-fluid" alt="...">
+				<div class="card" style="width: 18rem;">
+					<img src="img/terremoto-catastrofico.webp" class="card-img-top img-fluid " alt="...">
 					<div class="card-body">
 						<h5 class="card-title">Terremoto Catastrófico</h5>
 						<q class="card-text">Quando foi a última vez que você viu uma pedra rolando morro acima?</q>
@@ -164,16 +171,13 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="img/terremoto-catastrofico-um.jpg" class="d-block w-100 img-fluid" style="max-width: 686px;"
-								alt="...">
+							<img src="img/terremoto-catastrofico-um.jpg" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/terremoto-catastrofico-dois.webp" class="d-block w-100 img-fluid" style="max-width: 686px;"
-								alt="...">
+							<img src="img/terremoto-catastrofico-dois.webp" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/terremoto-catastrofico-tres.jpg" class="d-block w-100 img-fluid" style="max-width: 686px;"
-								alt="...">
+							<img src="img/terremoto-catastrofico-tres.jpg" class="d-block w-100 img-fluid" alt="...">
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -189,45 +193,35 @@
 				</div>
 			</div>
 			<div style="padding-top: 15px;">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto5()">Descrições</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto6()">Características</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto7()">Habilidades</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto02()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto5()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto6()">Habilidades</button>
+					<button type="button" class="btn btn-danger" onclick="mostrarTextoAlert2()">PERIGO: TERREMOTO</button>
 				</div>
-
 				<div class="mt-4">
-					<div id="texto-dinamico" class="fs-5"></div>
+					<div id="tex2" class="fs-5"></div>
 				</div>
-
 			</div>
-
-			<div id="liveAlertPlaceholder" style="padding-top: 15px;"></div>
-			<button type="button" class="btn btn-danger" id="liveAlertBtn">PERIGO: MORTAL</button>
-
-			<h1 style="padding-top: 15px;">Aparições</h1>
+			<h3 style="padding-top: 15px;">Aparições:</h3>
 			<div class="accordion" id="accordionExample" data-bs-theme="dark">
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 							data-bs-target="#1" aria-expanded="true" aria-controls="collapseOne">
-							Harmonia Imperfeita
+							Quake, Rattle and Roll
 						</button>
 					</h2>
 					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<p>Em "Harmonia Imperfeita", a turma tropeça em uma ilha onde passa a noite, apenas para
-								acordar e descobrir que todos os seus dragões desapareceram. Apenas Banguela , devido à
-								sua incapacidade de voar, permanece. Ele rapidamente leva a turma a uma enseada, onde
-								encontram muitos dragões, incluindo os seus, presos em âmbar. Logo eles ouvem o chamado
-								da Canção da Morte e uma Canção da Morte selvagem emerge. Ela cuidadosamente pega um
-								dragão, devora-o em segundos (fora da tela) e então retorna, cuspindo âmbar em todos
-								eles. Apenas Soluço escapa, tendo sido salvo por Astrid . Ele rapidamente encontra ajuda
-								e treina um Tambor do Trovão , que é imune ao chamado da Canção da Morte. Juntos, ateiam
-								fogo ao âmbar usando o gel Pesadelo Monstruoso e, em seguida, atraem a Canção da Morte
-								para longe da enseada, dando aos outros tempo para escapar. Enquanto o resto da equipe
-								ajuda a libertar os outros dragões, Soluço atrai a Canção da Morte para uma caverna
-								apertada e a aprisiona lá dentro. Mais tarde, ele escapa da tela.</p>
+							<p>Em "Quake, Rattle and Roll", Soluço e Perna-de-Peixe visitam Dark Deep ao descobrirem a
+								existência deste dragão através do Olho do Dragão . Ao visitarem a ilha, deparam-se com
+								Gronckles selvagens e hostis . Após esse encontro, foram atacados por uma nova espécie
+								de dragão que Perna-de-Peixe apelidou de "Quaken Catastrófico". Perna-de-Peixe tenta
+								então treinar o Quaken sozinho. Meatlug imediatamente se apresenta para defendê-lo, mas
+								acaba se tornando amigo do Quaken. Eventualmente, com mais contato com humanos, o Quaken
+								começa a se aquecer e se torna amigo dos Gronckles em Dark Deep.</p>
 						</div>
 					</div>
 				</div>
@@ -235,24 +229,20 @@
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
-							Tone Death
+							Entre a Rocha e a Parede Dura
 						</button>
 					</h2>
 					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q>Em "Tone Death", os Cavaleiros de Dragão resgatam um ovo dos Caçadores de Dragões . O
-								ovo choca e revela um bebê Canção da Morte chamado Garffiljorg . Embora a maioria deles
-								o ache adorável, Garff não consegue parar de chorar e cospe âmbar em Chicken . Heather
-								decide cantar para Garff, finalmente o tranquilizando. Ao longo do dia seguinte, os
-								cavaleiros se revezam para cantar para o filhote. No entanto, seus esforços se mostram
-								inúteis, e eles decidem levar Garff para a Ilha da Melodia para ser cuidado por outros
-								Canções da Morte. No entanto, no momento em que chegam à enseada, a Canção da Morte
-								adulta embosca e prende os cavaleiros. Garff e o adulto gradualmente começam a se
-								conectar, mas quando começam a cantar, o adulto rapidamente afasta o bebê, pois ele não
-								gosta de seu canto. Os cavaleiros percebem que Garff estava cantando todas as suas
-								canções, em vez do chamado da Canção da Morte. A Canção da Morte adulta ataca os
-								cavaleiros, que imediatamente começam a cantar, e Garff os imita. O adulto finalmente
-								cria laços com Garff e vai embora com ele.</q>
+							<p>Em "Entre a Rocha e a Parede Dura", os Caçadores de Dragões utilizam um par de Quakens
+								escravizados para minerar mármore . Eles conseguiram controlar e direcionar os Quakens
+								usando martelos cravados no chão. Eles também conseguiram forçá-los a lutar contra
+								Soluço, Banguela , Perna-de-Peixe e Meatlug e retornar aos Caçadores. No entanto,
+								Perna-de-Peixe percebeu como eles estavam sendo controlados e conseguiu usar um dos
+								martelos para convencê-los de que ele e Meatlug eram seus amigos. Juntos, Perna-de-Peixe
+								e os outros Cavaleiros de Dragão lideraram os Quakens até a Ilha dos Caçadores de
+								Dragões , onde ele ordenou que demolissem a fortaleza de mármore dos Caçadores. Eles
+								foram então levados para as Profundezas Escuras, em busca de liberdade.</p>
 						</div>
 					</div>
 				</div>
@@ -260,15 +250,14 @@
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 							data-bs-target="#3" aria-expanded="false" aria-controls="collapseTwo">
-							Vivendo no Limite
+							Os Últimos Heróis do Leilão
 						</button>
 					</h2>
 					<div id="3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q>Em "Vivendo no Limite", Astrid e Soluço descobrem que Garff está ferido e que seu pai
-								adotivo está desaparecido. Mais tarde, é revelado que o pai adotivo de Garff está sendo
-								mantido em cativeiro por Krogan e usado para atrair e capturar dragões selvagens com
-								facilidade.</q>
+							<p>Em "Os Últimos Heróis do Leilão", o chefe dos Caçadores de Dragões, Viggo Grimborn,
+								tinha um Quaken enjaulado para seu Leilão de Dragões . No entanto, ele foi libertado
+								pelos Cavaleiros de Dragão.</p>
 						</div>
 					</div>
 				</div>
@@ -276,41 +265,60 @@
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 							data-bs-target="#4" aria-expanded="false" aria-controls="collapseTwo">
-							Family Matters
+							Gruff Around the Edges
 						</button>
 					</h2>
 					<div id="4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q>Em "Family Matters", os Cavaleiros de Dragão descobrem âmbar da Canção da Morte em um
-								Singetail. Eles decidem ir ver Garff. Astrid decide que ele os acompanha de volta à
-								Borda em uma missão, que sai pela culatra quando Garff descobre que seu pai adotivo está
-								acorrentado e também é capturado em sua tentativa de libertá-lo. No final, eles são
-								libertados e reencontrados.</q>
+							<p>Em "Gruff Around the Edges", um dos três Quaken está dormindo em uma caverna, apenas
+								para ser acidentalmente acordado por Gruffnut Thorston , que foi levado para Dark Deep
+								como punição por seus primos.</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#5" aria-expanded="false" aria-controls="collapseTwo">
+							In Plain Sight
+						</button>
+					</h2>
+					<div id="5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p>Durante o episódio "In Plain Sight", Dagur descreveu Ansson como durão como um Quaken
+								quando eles eram crianças.</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#6" aria-expanded="false" aria-controls="collapseTwo">
+							Rei dos Dragões, Parte 2
+						</button>
+					</h2>
+					<div id="6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p>Em "Rei dos Dragões, Parte 2", Quakens Catastróficos e milhares de outros dragões
+								selvagens são convocados pelo Berserker Bewilderbeast para derrotar os Caçadores de
+								Dragões .</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div style="padding-top: 15px;">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto1()">Descrições</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto2()">Características</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto3()">habilidades</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
-				</div>
-
 				<div class="mt-4">
 					<div id="texto-dinamico" class="fs-5"></div>
 				</div>
-
 			</div>
-
 			<div style="padding-top: 40px;"></div>
 			<div class="double-side">
-				<div class="card" style="width: 28rem;">
-					<img src="img/transformasa.webp" class="card-img-top img-fluid" alt="...">
+				<div class="card" style="width: 18rem;">
+					<img src="img/destripador-rubro.png" class="card-img-top img-fluid" alt="...">
 					<div class="card-body">
-						<h5 class="card-title">Canção da Morte</h5>
-						<p class="card-text"> Transformação. Até dragões recém-nascidos podem espirrar ácido.</p>
+						<h5 class="card-title">Destripador Rubro</h5>
+						<q class="card-text">O Goregutter é um gigante gentil, reservado e que não machucaria uma
+							ovelha. Pelo menos não intencionalmente.</q>
 					</div>
 				</div>
 				<div id="12" class="carousel slide">
@@ -322,16 +330,13 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="img/char3.png" class="d-block w-100 img-fluid"
-								style="max-height: 479px; max-width: 686px;" alt="...">
+							<img src="img/destripador-rubro-um.jpg" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/char2.jpg" class="d-block w-100 img-fluid"
-								style="max-height: 479px; max-width: 686px;" alt="...">
+							<img src="img/destripador1.webp" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/char1.jpg" class="d-block w-100 img-fluid"
-								style="max-height: 479px; max-width: 686px;" alt="...">
+							<img src="img/gore1.jpg" class="d-block w-100 img-fluid" alt="...">
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#12" data-bs-slide="prev">
@@ -344,100 +349,49 @@
 					</button>
 				</div>
 			</div>
-			<h1 style="padding-top: 15px;">Aparições</h1>
+			<div style="padding-top: 15px;">
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto03()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto7()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto8()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto9()">Habilidades</button>
+					<button type="button" class="btn btn-success" onclick="mostrarTextoAlert3()">PERIGO: FLOR</button>
+				</div>
+				<div class="mt-4">
+					<div id="tex3" class="fs-5"></div>
+				</div>
+			</div>
+			<h3 style="padding-top: 15px;">Aparições:</h3>
 			<div class="accordion" id="accordionExample" data-bs-theme="dark">
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#6" aria-expanded="true" aria-controls="collapseOne">
-							Joia de uma Cor Diferente
-						</button>
-					</h2>
-					<div id="6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q>No episódio "Joia de uma Cor Diferente", os Asas-Muda foram encontrados em uma ilha .
-								Perna-de-Peixe , em sua própria ilha "secreta", encontra uma estranha joia brilhante
-								enquanto está com seu amado dragão, Meatlug . Levando-a de volta para Berk , Bocão a
-								identifica como uma "Pedra da Boa Sorte" (pois Bocão confunde "Pedras da Boa Sorte" com
-								ovos de dragão Asa-Muda), fazendo com que os cidadãos se aglomerem em Perna-de-Peixe,
-								oferecendo-lhe trocas valiosas. Oprimido, Perna-de-Peixe, após se recusar a entregá-la a
-								Melequento , pede a Soluço que o ajude a devolvê-la, para que ele possa esquecê-la
-								completamente.</q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#7" aria-expanded="false" aria-controls="collapseTwo">
-							Somos uma Família - Parte 1
+							data-bs-target="#7" aria-expanded="true" aria-controls="collapseOne">
+							Como Treinar o Seu Dragão: O Mundo Oculto
 						</button>
 					</h2>
 					<div id="7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q>Em "Somos uma Família - Parte 1", um Mutante selvagem foi encontrado escondido na
-								entrada da caverna de Bork e "manteve Melequento como refém" até Soluço libertá-lo. Os
-								Párias mantinham um deles em uma gaiola em sua ilha , que, juntamente com uma Morte
-								Sussurrante e um Caldeirão enjaulados , foi posteriormente usada em um ataque a Soluço,
-								Mofo e Tempestade de Moscas .</q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#1" aria-expanded="false" aria-controls="collapseTwo">
-							Free Scauldy
-						</button>
-					</h2>
-					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q>Em "Free Scauldy", enquanto procuravam pela Morte Gritante , Soluço, Perna-de-Peixe e
-								os Gêmeos descobriram um Caldeirão que havia sido levado pela correnteza até a Ilha da
-								Asa Transformada e estava preso por uma asa sob uma pilha de pedras. Apesar da ameaça
-								representada pelos Asas Transformadas, seus dragões se recusaram a deixar o Caldeirão
-								morrer de desidratação, forçando Ruffnut a domar o dragão — que ela chamou de Scauldy —
-								para que os outros pudessem remover as pedras e fazer uma tala para a asa
-								danificada.</q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
-							Harmonia Imperfeita
-						</button>
-					</h2>
-					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q>Em "Harmonia Imperfeita", depois que os dragões desaparecem, Melequento começa a
-								reclamar e diz sarcasticamente a Soluço se há algo que ele queira atrair para eles, como
-								um Asa Transformadora ou uma Morte Gritante.</q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							
-						</button>
-					</h2>
-					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q></q>
+							<p>Os Cavaleiros de Dragão resgataram um Goregutter Carmesim preso em uma de suas missões
+								para naves de Caçadores de Dragões e o trouxeram de volta para Berk . Este Goregutter
+								também se apegou ao filhote de Meatlug , Fishmeat , e acompanha o bebê aonde quer que
+								ele vá, atuando frequentemente como uma espécie de guarda-costas ou escolta em muitos
+								casos, protegendo o pequeno Gronckle de perigos.
+								Outro Crimson Goregutter estava entre a miríade de dragões vistos no Mundo Oculto que se
+								curvaram diante de Banguela e sua companheira , mostrando respeito ao seu Alfa .</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div style="padding-top: 40px;"></div>
 			<div class="double-side">
-				<div class="card" style="width: 30rem;">
-					<img src="img/bone.webp" class="card-img-top" alt="...">
+				<div class="card" style="width: 18rem;">
+					<img src="img/eruptodon.webp" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title">Rouba Ossos</h5>
-						<p class="card-text"></p>
+						<h5 class="card-title">Eruptidão</h5>
+						<q class="card-text">O Eruptodonte não precisa de um vulcão ativo para se alimentar. Seu apetite
+							é insaciável e seu desejo imenso, tanto que ele devorará a crosta de um vulcão adormecido
+							até que este entre em erupção.</q>
 					</div>
 				</div>
 				<div id="13" class="carousel slide">
@@ -449,16 +403,13 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="img/bone1.webp" class="d-block w-100 img-fluid"
-								style="max-height: 321px; max-width: 477px;" alt="...">
+							<img src="img/arterup.jpg" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/bone2.webp" class="d-block w-100 img-fluid"
-								style="max-height: 321px; max-width: 477px;" alt="...">
+							<img src="img/Eruptodon_Feeding_Frenzy.webp" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/bone3.jpg" class="d-block w-100 img-fluid"
-								style="max-height: 321px; max-width: 477px;" alt="...">
+							<img src="img/Eruptodon_Fireballs.webp" class="d-block w-100 img-fluid" alt="...">
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#13" data-bs-slide="prev">
@@ -472,93 +423,84 @@
 				</div>
 			</div>
 			<div style="padding-top: 15px;">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto1()">Descrições</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto2()">Características</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto3()">habilidades</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto04()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto10()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto11()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto12()">Habilidades</button>
+					<button type="button" class="btn btn-warning" onclick="mostrarTextoAlert4()">PERIGO: VULCÃO</button>
 				</div>
-
 				<div class="mt-4">
-					<div id="texto-dinamico" class="fs-5"></div>
+					<div id="tex4" class="fs-5"></div>
 				</div>
-
 			</div>
-			<h1 style="padding-top: 15px;">Aparições</h1>
+			<h3 style="padding-top: 15px;">Aparições:</h3>
 			<div class="accordion" id="accordionExample" data-bs-theme="dark">
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							a
+							data-bs-target="#8" aria-expanded="false" aria-controls="collapseTwo">
+							Defensores da Asa, Parte 1
 						</button>
 					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q></q>
+							<q>Mencionado pela primeira vez em "Defensores da Asa, Parte 1", o único Eruptodonte
+								conhecido foi encontrado em Caldera Cay , uma ilha governada pela Rainha Mala, dos
+								Defensores da Asa . Era conhecido como o Grande Protetor . No entanto, foi levado pelos
+								Caçadores de Dragões quando Mala interrogava Soluço e seu grupo.</q>
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							a
+							data-bs-target="#9" aria-expanded="false" aria-controls="collapseTwo">
+							Defensores da Asa, Parte 2
 						</button>
 					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q></q>
+							<q>Em "Defensores da Asa, Parte 2", a Grande Protetora (uma Eruptodonte fêmea) foi
+								capturada por Viggo e Ryker . Ela era agressiva no início, mas depois se interessou mais
+								por sua própria sobrevivência. Mala estava preocupada com a Eruptodonte, dizendo que os
+								Eruptodontes precisam comer lava constantemente, ou então morrerão de fome. No entanto,
+								Viggo planejou usar a dragoa para destruir a Borda do Dragão , fazendo com que ela se
+								alimentasse da lava do vulcão adormecido da Borda para causar uma erupção. Felizmente,
+								Mala e os cavaleiros chegaram a tempo de detê-la antes que ela pudesse produzir uma
+								erupção vulcânica, alimentando-a com lava Gronckle , e a levaram de volta para Caldera
+								Cay.</q>
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#1" aria-expanded="false" aria-controls="collapseTwo">
-							a
+							data-bs-target="#10" aria-expanded="false" aria-controls="collapseTwo">
+							Fora da Frigideira
 						</button>
 					</h2>
-					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q></q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
-							a
-						</button>
-					</h2>
-					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q></q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							a
-						</button>
-					</h2>
-					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q></q>
+							<q>Em "Fora da Frigideira", o Grande Protetor pôs um ovo, que foi levado por Soluço, Mala
+								e Perna-de-Peixe para dentro do vulcão. O ovo eclodiu e deu origem ao Novo Protetor em "
+								Concha em Choque, Parte 1 ". O bebê foi levado para a Borda do Dragão para proteção
+								durante os ataques da Concha em Caldera Cay. O Eruptodonte ajudou a impedir a erupção do
+								vulcão da ilha, que foi devolvido aos Defensores da Ala.</q>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div style="padding-top: 40px;"></div>
 			<div class="double-side">
-				<div class="card" style="width: 30rem;">
-					<img src="img/drami.webp" class="card-img-top" alt="...">
+				<div class="card" style="width: 18rem;">
+					<img src="img/sentinelacard.webp" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title">Dramilhão</h5>
-						<p class="card-text"></p>
+						<h5 class="card-title">Sentinela</h5>
+						<q class="card-text">Os Sentinelas comandam este lugar com punho de ferro. Eles não comem nada
+							além daquela fruta . Eles nunca encontraram Fúrias da Noite antes, e esse deve ser o único
+							dragão que eles não viram. E, falando em ver, eles não veem. Mas eles parecem rastrear muito
+							bem algo que é cego.</q>
 					</div>
 				</div>
 				<div id="14" class="carousel slide">
@@ -570,16 +512,13 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="img/drami4.jpg" class="d-block w-100 img-fluid"
-								style="max-height: 1000px; max-width: 686px;" alt="...">
+							<img src="img/sentinela-um.jpg" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/drami1.jpg" class="d-block w-100 img-fluid"
-								style="max-height: 1000px; max-width: 686px;" alt="...">
+							<img src="img/sentinela-um.png" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/drami2.jpg" class="d-block w-100 img-fluid"
-								style="max-height: 1000px; max-width: 686px;" alt="...">
+							<img src="img/sentinela2.jpg" class="d-block w-100 img-fluid" alt="...">
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#14" data-bs-slide="prev">
@@ -593,93 +532,58 @@
 				</div>
 			</div>
 			<div style="padding-top: 15px;">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto1()">Descrições</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto2()">Características</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto3()">habilidades</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto05()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto13()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto14()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto15()">Habilidades</button>
+					<button type="button" class="btn btn-success" onclick="mostrarTextoAlert5()">PERIGO: ESTATUA</button>
 				</div>
-
 				<div class="mt-4">
-					<div id="texto-dinamico" class="fs-5"></div>
+					<div id="tex5" class="fs-5"></div>
 				</div>
-
 			</div>
-			<h1 style="padding-top: 15px;">Aparições</h1>
+			<h3 style="padding-top: 15px;">Aparições:</h3>
 			<div class="accordion" id="accordionExample" data-bs-theme="dark">
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							a
+							data-bs-target="#11" aria-expanded="false" aria-controls="collapseTwo">
+							Uma Questão de Perspectiva
 						</button>
 					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q></q>
+							<q>Os Sentinelas fizeram sua estreia no episódio "Uma Questão de Perspectiva", quando os
+								Cavaleiros de Dragão vão para Vanaheim . Eles também aparecem no episódio " Procurando
+								Oswald... e a Galinha ".</q>
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							a
+							data-bs-target="#12" aria-expanded="false" aria-controls="collapseTwo">
+							Guardiões de Vanaheim
 						</button>
 					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q></q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#1" aria-expanded="false" aria-controls="collapseTwo">
-							a
-						</button>
-					</h2>
-					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q></q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
-							a
-						</button>
-					</h2>
-					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q></q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							a
-						</button>
-					</h2>
-					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q></q>
+							<q>Os sentinelas reaparecem no episódio "Guardiões de Vanaheim", no qual é revelado que
+								eles estão hibernando quando são feridos.</q>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div style="padding-top: 40px;"></div>
 			<div class="double-side">
-				<div class="card" style="width: 25rem;">
-					<img src="img/buf.webp" class="card-img-top" alt="...">
+				<div class="card" style="width: 18rem;">
+					<img src="img/Grito-da-morte.webp" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title">Canção da Morte</h5>
-						<p class="card-text"></p>
+						<h5 class="card-title">Grito da Morte</h5>
+						<p class="card-text">Soluço, tenho certeza de que eu me lembraria de alguém todo branco, da
+							Classe Boulder, Asa de Titã Sussurrante da Morte, com olhos vermelhos brilhantes que
+							perfuravam um buraco na sua alma.</p>
 					</div>
 				</div>
 				<div id="15" class="carousel slide">
@@ -688,19 +592,20 @@
 							aria-label="Slide 1"></button>
 						<button type="button" data-bs-target="#15" data-bs-slide-to="1" aria-label="Slide 2"></button>
 						<button type="button" data-bs-target="#15" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#15" data-bs-slide-to="3" aria-label="Slide 4"></button>
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="img/buf1.jpg" class="d-block w-100 img-fluid"
-								style="max-height: 479px; max-width: 686px;" alt="...">
+							<img src="img/morteart.jpg" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/buf2.webp" class="d-block w-100 img-fluid"
-								style="max-height: 479px; max-width: 686px;" alt="...">
+							<img src="img/grito-da-morte-quatro.webp" class="d-block w-100 img-fluid" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="img/buf3.webp" class="d-block w-100 img-fluid"
-								style="max-height: 479px; max-width: 686px;" alt="...">
+							<img src="img/grito1.jpg" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/grito2.jpg" class="d-block w-100 img-fluid" alt="...">
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#15" data-bs-slide="prev">
@@ -714,82 +619,80 @@
 				</div>
 			</div>
 			<div style="padding-top: 15px;">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto1()">Descrições</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto2()">Características</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto3()">habilidades</button>
-					<button type="button" class="btn btn-dark" onclick="mostrarTexto4()">Ocultar</button>
+				<div id="liveAlertPlaceholder" style="padding-top: 15px;"></div>
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto06()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto16()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto17()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto18()">Habilidades</button>
+					<button type="button" class="btn btn-danger" onclick="mostrarTextoAlert6()">PERIGO: MORTE</button>
 				</div>
-
 				<div class="mt-4">
-					<div id="texto-dinamico" class="fs-5"></div>
+					<div id="tex6" class="fs-5"></div>
 				</div>
-
 			</div>
-			<h1 style="padding-top: 15px;">Aparições</h1>
+			<h3 style="padding-top: 15px;">Aparições:</h3>
 			<div class="accordion" id="accordionExample" data-bs-theme="dark">
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							a
+							data-bs-target="#16" aria-expanded="true" aria-controls="collapseOne">
+							Cass Out, Parte 1
 						</button>
 					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q></q>
+							<q>Em " Cass Out, Parte 1 ", o Screaming Death foi encontrado quando atacou Melequento e
+								Presa de Gancho e teria matado Melequento se Alvin, o Traiçoeiro, não o tivesse salvado.
+								Mais tarde, foi visto se despedaçando de uma chaminé. Screaming Death foi encontrado por
+								Perna-de-Peixe enquanto ele e Meatlug estavam em patrulha. Soluço mais tarde descobre
+								que o motivo pelo qual Screaming Death está destruindo as ilhas é para procurar por
+								Groundsplitter , sua mãe, e enviou cartas do Terror de volta para a academia. Mais
+								tarde, Perna-de-Peixe usa a Raiz do Dragão para atrair Screaming Death para a Ilha dos
+								Exilados . Enquanto a arena de treinamento da Ilha dos Exilados estava desmoronando,
+								Screaming Death viu sua mãe; no entanto, voltou a atacar depois que Dagur a capturou.
+								Eventualmente, Groundsplitter foi libertado por Melequento e Presa de Gancho, e ela e os
+								irmãos do Screaming Death voaram para encontrá-lo. Morte Gritante, percebendo que tinham
+								sido os Cavaleiros de Dragão que salvaram sua mãe, deu um último rugido de agradecimento
+								a Soluço e partiu com sua família. Mais tarde, foi adicionado ao Livro dos Dragões por
+								Perna-de-Peixe.</q>
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							a
+							data-bs-target="#17" aria-expanded="false" aria-controls="collapseTwo">
+							A Noite dos Caçadores, Parte 1
 						</button>
 					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q></q>
+							<q>Três anos depois, a Morte Gritante está vivendo com Divisora de Terras em uma ilha .
+								Quando Mosca da Tempestade , Astrid e os outros cavaleiros foram capturados por Ryker
+								Grimborn e seus Caçadores de Dragões durante os eventos de " A Noite dos Caçadores,
+								Parte 1
+								", Soluço, Banguela, Melequento e Presa de Anzol foram para a ilha. Lá, encontraram a
+								Morte
+								Gritante e foram perseguidos por ela; no entanto, sua mãe o impediu, dando aos
+								cavaleiros
+								permissão para pegar as escamas da Morte Gritante e usá-las como Armadura de Dragão
+								contra
+								os caçadores.</q>
 						</div>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#1" aria-expanded="false" aria-controls="collapseTwo">
-							a
+							data-bs-target="#123" aria-expanded="false" aria-controls="collapseTwo">
+							Rei dos Dragões, Parte 2
 						</button>
 					</h2>
-					<div id="1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="123" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<q></q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#2" aria-expanded="false" aria-controls="collapseTwo">
-							a
-						</button>
-					</h2>
-					<div id="2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q></q>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							a
-						</button>
-					</h2>
-					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<q></q>
+							<q>A Morte Gritante apareceu em "Rei dos Dragões, Parte 2" ao lado do Novo Protetor voando
+								em direção à Ilha Berserker durante a batalha final contra os caçadores e voadores .</q>
 						</div>
 					</div>
 				</div>
@@ -799,21 +702,17 @@
 	</article>
 
 	<footer>
-		<a class="icon-link icon-link-hover link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-			style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#inicio-boulder">
-			Voltar ao início
-			<svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-				<path
-					d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-			</svg>
+		<a href="#">
+			<button type="button" class="btn btn-outline-danger">Voltar</button>
 		</a>
-		<p>Copyright &copy; Soju e Bacana 2025.</p>
+		<p><br>Copyright &copy; Soju e Bacana 2025.</p>
 	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/javascript.js"></script>
 
 	<!-- https://ping-xiong.github.io/Dragons-Race-to-the-Edge-Interactive-Map-Backup/#/map -->
+	<!-- https://howtotrainyourdragon.fandom.com/wiki/Ultimate_Book_of_Dragons -->
 </body>
 
 </html>

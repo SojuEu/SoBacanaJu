@@ -24,7 +24,7 @@
 	}
 </style>
 
-<body data-bs-theme="dark" id="inicio-tracker">
+<body data-bs-theme="dark">
 
 	<!-- Início do Nav -->
 	<nav class="navbar navbar-expand-lg bg-dark nav-underline sticky-top">
@@ -67,8 +67,8 @@
 					</li>
 					<!-- Fim do dropdown -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false">
+						<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false" style="color: rgb(218, 0, 0);">
 							Classes
 						</a>
 						<ul class="dropdown-menu">
@@ -134,7 +134,7 @@
 	</nav>
 	<!-- Fim do Nav -->
 
-	<article>
+	<article id="inicio-curtas">
 
 		<div class="container">
 
@@ -153,15 +153,10 @@
 
 
 	<footer>
-		<a class="icon-link icon-link-hover link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-			style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#inicio-tracker">
-			Voltar ao início
-			<svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-				<path
-					d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-			</svg>
+		<a href="#inicio-curtas">
+			<button type="button" class="btn btn-outline-danger">Voltar</button>
 		</a>
-		<p>Copyright &copy; Soju e Bacana 2025.</p>
+		<p><br>Copyright &copy; Soju e Bacana 2025.</p>
 	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>

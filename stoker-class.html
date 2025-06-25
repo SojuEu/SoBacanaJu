@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Como Treinar O Seu Dragão</title>
+	<title>Stoker</title>
 	<meta name="description" content="Free Web tutorials">
 	<meta name="keywords" content="Dragões, HTTYD, Como Treinar O Seu Dragão, Berk">
 	<meta name="author" content="Júlia Sophia, Sérgio">
@@ -15,16 +15,24 @@
 </head>
 
 <style>
-	article {
-		background-image: url(img/nightfurypresent-img.jpg);
+	body {
+		background-image: url(img/stoker2.webp);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
 	}
+
+	.accordion-button:hover {
+		background-color: #33393f;
+	}
+
+	.card {
+		text-align: center;
+	}
 </style>
 
-<body data-bs-theme="dark" id="inicio-stoker">
+<body data-bs-theme="dark">
 
 	<!-- Início do Nav -->
 	<nav class="navbar navbar-expand-lg bg-dark nav-underline sticky-top">
@@ -67,8 +75,8 @@
 					</li>
 					<!-- Fim do dropdown -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false">
+						<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false" style="color: rgb(218, 0, 0);">
 							Classes
 						</a>
 						<ul class="dropdown-menu">
@@ -90,7 +98,8 @@
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item" aria-current="page" style="color: rgb(218, 0, 0);" href="stoker-class.html">
+								<a class="dropdown-item" aria-current="page" style="color: rgb(218, 0, 0);"
+									href="stoker-class.html">
 									<img src="img/stoker-class-img.png" class="img-fluid small" alt="Classe Stoker">
 									Stoker
 								</a>
@@ -133,40 +142,487 @@
 		</div>
 	</nav>
 	<!-- Fim do Nav -->
-
-	<article>
-
-		<div class="container">
-
-			<!-- Conteúdo/ Livros... -->
-			<div class="container-content">
-
-				
-
-				
-
+	<article id="inicio" style="padding-top: 20px; margin-bottom: 20px;">
+		<div class="container rounded">
+			<div class="text-center" style="padding: 15px;">
+				<img src="img/BOULDER-texto.png" alt="">
+			</div>
+			<p style="padding: 30px;">Os dragões da classe Boulder são resistentes e associados à terra. Eles podem
+				comer pedras, que muitas delas derretem em seus estômagos e regurgitam como explosões de lava. Embora
+				tenham asas pequenas em comparação com o tamanho do corpo, são capazes de voar tão rápido e tão alto
+				quanto a maioria dos outros dragões. De acordo com Fishlegs em Rise of Berk , os dragões da classe
+				Boulder não são exigentes com a comida.</p>
+			<div class="double-side">
+				<div class="card" style="width: 18rem;">
+					<img src="img/pesadelocard.webp" class="card-img-top img-fluid" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Pesadelo Monstruoso</h5>
+						<q class="card-text">E então, temos o Pesadelo Monstruoso. Só os melhores vikings vão atrás
+							deles. Eles têm esse... péssimo hábito de se incendiarem.</q>
+					</div>
+				</div>
+				<div id="carouselExampleIndicators" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+							class="active" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/pesadelo1.jpg" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/pesadelo2.jpg" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/pesadelo3.webp" class="d-block w-100 img-fluid" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto016()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto46()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto47()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto48()">Habilidades</button>
+					<button type="button" class="btn btn-danger" onclick="mostrarTextoAlert16()">PERIGO: MORTAL</button>
+				</div>
+				<div class="mt-4">
+					<div id="tex16" class="fs-5"></div>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="mt-4">
+					<div id="texto-dinamico" class="fs-5"></div>
+				</div>
+			</div>
+			<div style="padding-top: 40px;"></div>
+			<div class="double-side">
+				<div class="card" style="width: 18rem;">
+					<img src="img/terrorcard.png" class="card-img-top img-fluid" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Terror Norturno</h5>
+						<q class="card-text">Não é um dragão grande, são vários pequenos!</q>
+					</div>
+				</div>
+				<div id="12" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#12" data-bs-slide-to="0" class="active"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#12" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#12" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#12" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/terror3.png" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/terror4.webp" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/terror2.jpg" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/terror1.webp" class="d-block w-100 img-fluid" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#12" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#12" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto017()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto49()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto50()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto51()">Habilidades</button>
+					<button type="button" class="btn btn-danger" onclick="mostrarTextoAlert17()">PERIGO: MORTAL</button>
+				</div>
+				<div class="mt-4">
+					<div id="tex17" class="fs-5"></div>
+				</div>
+			</div>
+			<h3 style="padding-top: 15px;">Aparições:</h3>
+			<div class="accordion" id="accordionExample" data-bs-theme="dark">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#7" aria-expanded="true" aria-controls="collapseOne">
+							Como Treinar o Seu Dragão: O Mundo Oculto
+						</button>
+					</h2>
+					<div id="7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p>Os Cavaleiros de Dragão resgataram um Goregutter Carmesim preso em uma de suas missões
+								para naves de Caçadores de Dragões e o trouxeram de volta para Berk . Este Goregutter
+								também se apegou ao filhote de Meatlug , Fishmeat , e acompanha o bebê aonde quer que
+								ele vá, atuando frequentemente como uma espécie de guarda-costas ou escolta em muitos
+								casos, protegendo o pequeno Gronckle de perigos.
+								Outro Crimson Goregutter estava entre a miríade de dragões vistos no Mundo Oculto que se
+								curvaram diante de Banguela e sua companheira , mostrando respeito ao seu Alfa .</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="padding-top: 40px;"></div>
+			<div class="double-side">
+				<div class="card" style="width: 18rem;">
+					<img src="img/rubra1.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Morte Rubra</h5>
+						<q class="card-text">É como uma colmeia gigante . Elas são as operárias, e aquela é a rainha
+							delas. Ela as controla.</q>
+					</div>
+				</div>
+				<div id="13" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#13" data-bs-slide-to="0" class="active"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#13" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#13" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#13" data-bs-slide-to="3" aria-label="Slide 4"></button>
+						<button type="button" data-bs-target="#13" data-bs-slide-to="4" aria-label="Slide 5"></button>
+						<button type="button" data-bs-target="#13" data-bs-slide-to="5" aria-label="Slide 6"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/rubraart.jfif" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/comparação-de-tamanhos.jpg" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/rubra2.webp" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/rubra3.webp" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/rubra4.jpg" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/rubra5.webp" class="d-block w-100 img-fluid" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#13" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#13" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto018()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto52()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto53()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto54()">Habilidades</button>
+					<button type="button" class="btn btn-danger" onclick="mostrarTextoAlert18()">PERIGO: MORTAL</button>
+				</div>
+				<div class="mt-4">
+					<div id="tex18" class="fs-5"></div>
+				</div>
+			</div>
+			<h3 style="padding-top: 15px;">Aparições:</h3>
+			<div class="accordion" id="accordionExample" data-bs-theme="dark">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#8" aria-expanded="false" aria-controls="collapseTwo">
+							Defensores da Asa, Parte 1
+						</button>
+					</h2>
+					<div id="8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Mencionado pela primeira vez em "Defensores da Asa, Parte 1", o único Eruptodonte
+								conhecido foi encontrado em Caldera Cay , uma ilha governada pela Rainha Mala, dos
+								Defensores da Asa . Era conhecido como o Grande Protetor . No entanto, foi levado pelos
+								Caçadores de Dragões quando Mala interrogava Soluço e seu grupo.</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#9" aria-expanded="false" aria-controls="collapseTwo">
+							Defensores da Asa, Parte 2
+						</button>
+					</h2>
+					<div id="9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Em "Defensores da Asa, Parte 2", a Grande Protetora (uma Eruptodonte fêmea) foi
+								capturada por Viggo e Ryker . Ela era agressiva no início, mas depois se interessou mais
+								por sua própria sobrevivência. Mala estava preocupada com a Eruptodonte, dizendo que os
+								Eruptodontes precisam comer lava constantemente, ou então morrerão de fome. No entanto,
+								Viggo planejou usar a dragoa para destruir a Borda do Dragão , fazendo com que ela se
+								alimentasse da lava do vulcão adormecido da Borda para causar uma erupção. Felizmente,
+								Mala e os cavaleiros chegaram a tempo de detê-la antes que ela pudesse produzir uma
+								erupção vulcânica, alimentando-a com lava Gronckle , e a levaram de volta para Caldera
+								Cay.</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#10" aria-expanded="false" aria-controls="collapseTwo">
+							Fora da Frigideira
+						</button>
+					</h2>
+					<div id="10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Em "Fora da Frigideira", o Grande Protetor pôs um ovo, que foi levado por Soluço, Mala
+								e Perna-de-Peixe para dentro do vulcão. O ovo eclodiu e deu origem ao Novo Protetor em "
+								Concha em Choque, Parte 1 ". O bebê foi levado para a Borda do Dragão para proteção
+								durante os ataques da Concha em Caldera Cay. O Eruptodonte ajudou a impedir a erupção do
+								vulcão da ilha, que foi devolvido aos Defensores da Ala.</q>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="padding-top: 40px;"></div>
+			<div class="double-side">
+				<div class="card" style="width: 18rem;">
+					<img src="img/caudacard.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Cauda de Fogo</h5>
+						<q class="card-text">Melequento : " Aquela coisa tinha olhos atrás da cabeça! "
+							Soluço : " E ele pode atacar tanto com a boca quanto com a cauda. "</q>
+					</div>
+				</div>
+				<div id="14" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#14" data-bs-slide-to="0" class="active"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#14" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#14" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/cauda1.png" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/cauda1.jpg" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/cauda3.webp" class="d-block w-100 img-fluid" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#14" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#14" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto019()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto55()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto56()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto57()">Habilidades</button>
+					<button type="button" class="btn btn-danger" onclick="mostrarTextoAlert19()">PERIGO:
+						MORTAL</button>
+				</div>
+				<div class="mt-4">
+					<div id="tex19" class="fs-5"></div>
+				</div>
+			</div>
+			<h3 style="padding-top: 15px;">Aparições:</h3>
+			<div class="accordion" id="accordionExample" data-bs-theme="dark">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#11" aria-expanded="false" aria-controls="collapseTwo">
+							Uma Questão de Perspectiva
+						</button>
+					</h2>
+					<div id="11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Os Sentinelas fizeram sua estreia no episódio "Uma Questão de Perspectiva", quando os
+								Cavaleiros de Dragão vão para Vanaheim . Eles também aparecem no episódio " Procurando
+								Oswald... e a Galinha ".</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#12" aria-expanded="false" aria-controls="collapseTwo">
+							Guardiões de Vanaheim
+						</button>
+					</h2>
+					<div id="12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Os sentinelas reaparecem no episódio "Guardiões de Vanaheim", no qual é revelado que
+								eles estão hibernando quando são feridos.</q>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="padding-top: 40px;"></div>
+			<div class="double-side">
+				<div class="card" style="width: 18rem;">
+					<img src="img/tufaocard.webp" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Tufãomerangue</h5>
+						<p class="card-text">Assim como os anéis dentro de uma árvore, a marca de queimadura pode
+							indicar a idade e, portanto, o tamanho do Typhoomerang em questão.</p>
+					</div>
+				</div>
+				<div id="15" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#15" data-bs-slide-to="0" class="active"
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#15" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#15" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#15" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/tufao-merangue-um.jpg" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/tufao-merangue-dois.png" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/tufao-merangue-bebe-um.avif" class="d-block w-100 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/tufao4.webp" class="d-block w-100 img-fluid" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#15" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#15" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</div>
+			<div style="padding-top: 15px;">
+				<div id="liveAlertPlaceholder" style="padding-top: 15px;"></div>
+				<div class="btn-group w-100" role="group">
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto020()">Ocultar</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto55()">Descrição</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto56()">Características</button>
+					<button type="button" class="btn btn-dark" onclick="mostrarTexto57()">Habilidades</button>
+					<button type="button" class="btn btn-danger" onclick="mostrarTextoAlert20()">PERIGO: MORTAL</button>
+				</div>
+				<div class="mt-4">
+					<div id="tex20" class="fs-5"></div>
+				</div>
+			</div>
+			<h3 style="padding-top: 15px;">Aparições:</h3>
+			<div class="accordion" id="accordionExample" data-bs-theme="dark">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#16" aria-expanded="true" aria-controls="collapseOne">
+							Cass Out, Parte 1
+						</button>
+					</h2>
+					<div id="16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Em " Cass Out, Parte 1 ", o Screaming Death foi encontrado quando atacou Melequento e
+								Presa de Gancho e teria matado Melequento se Alvin, o Traiçoeiro, não o tivesse salvado.
+								Mais tarde, foi visto se despedaçando de uma chaminé. Screaming Death foi encontrado por
+								Perna-de-Peixe enquanto ele e Meatlug estavam em patrulha. Soluço mais tarde descobre
+								que o motivo pelo qual Screaming Death está destruindo as ilhas é para procurar por
+								Groundsplitter , sua mãe, e enviou cartas do Terror de volta para a academia. Mais
+								tarde, Perna-de-Peixe usa a Raiz do Dragão para atrair Screaming Death para a Ilha dos
+								Exilados . Enquanto a arena de treinamento da Ilha dos Exilados estava desmoronando,
+								Screaming Death viu sua mãe; no entanto, voltou a atacar depois que Dagur a capturou.
+								Eventualmente, Groundsplitter foi libertado por Melequento e Presa de Gancho, e ela e os
+								irmãos do Screaming Death voaram para encontrá-lo. Morte Gritante, percebendo que tinham
+								sido os Cavaleiros de Dragão que salvaram sua mãe, deu um último rugido de agradecimento
+								a Soluço e partiu com sua família. Mais tarde, foi adicionado ao Livro dos Dragões por
+								Perna-de-Peixe.</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#17" aria-expanded="false" aria-controls="collapseTwo">
+							A Noite dos Caçadores, Parte 1
+						</button>
+					</h2>
+					<div id="17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>Três anos depois, a Morte Gritante está vivendo com Divisora de Terras em uma ilha .
+								Quando Mosca da Tempestade , Astrid e os outros cavaleiros foram capturados por Ryker
+								Grimborn e seus Caçadores de Dragões durante os eventos de " A Noite dos Caçadores,
+								Parte 1
+								", Soluço, Banguela, Melequento e Presa de Anzol foram para a ilha. Lá, encontraram a
+								Morte
+								Gritante e foram perseguidos por ela; no entanto, sua mãe o impediu, dando aos
+								cavaleiros
+								permissão para pegar as escamas da Morte Gritante e usá-las como Armadura de Dragão
+								contra
+								os caçadores.</q>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#123" aria-expanded="false" aria-controls="collapseTwo">
+							Rei dos Dragões, Parte 2
+						</button>
+					</h2>
+					<div id="123" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<q>A Morte Gritante apareceu em "Rei dos Dragões, Parte 2" ao lado do Novo Protetor voando
+								em direção à Ilha Berserker durante a batalha final contra os caçadores e voadores .</q>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-
+		</div>
 	</article>
 
-
 	<footer>
-		<a class="icon-link icon-link-hover link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-			style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#inicio-stoker">
-			Voltar ao início
-			<svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-				<path
-					d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-			</svg>
+		<a href="#">
+			<button type="button" class="btn btn-outline-danger">Voltar</button>
 		</a>
-		<p>Copyright &copy; Soju e Bacana 2025.</p>
+		<p><br>Copyright &copy; Soju e Bacana 2025.</p>
 	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/javascript.js"></script>
 
+	<!-- https://ping-xiong.github.io/Dragons-Race-to-the-Edge-Interactive-Map-Backup/#/map -->
 </body>
 
 </html>
