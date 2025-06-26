@@ -93,7 +93,7 @@ article{
   margin: 20px;
   border-radius: 35px;
   /* Esse 0.4 é o que controla a opacidade do retângulo preto a frente de berk */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.651);
   gap: 50px;
 
 }
@@ -123,7 +123,7 @@ article{
 }
 
 hr{
-  border: 5px solid white;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 5px;
 }
 
