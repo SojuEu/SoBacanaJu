@@ -1,28 +1,3 @@
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-const appendAlert = (message, type) => {
-    const wrapper = document.createElement('div')
-    wrapper.innerHTML = [
-        `<div class="alert alert-${type} alert-dismissible" role="alert" data-bs-theme="dark">`,
-        `   <div>${message}</div>`,
-        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-        '</div>'
-    ].join('')
-
-    alertPlaceholder.append(wrapper)
-}
-
-document.getElementById('1')?.addEventListener('click', () => {
-    appendAlert('TERREMOTO, CUIDADO!', 'danger')
-})
-
-document.getElementById('2')?.addEventListener('click', () => {
-    appendAlert('🚧 Zona de risco à frente. Prossiga com cautela.', 'danger')
-})
-
-document.getElementById('3')?.addEventListener('click', () => {
-    appendAlert('✅ Situação sob controle. Nenhum perigo detectado.', 'danger')
-})
-
 let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
 
@@ -444,7 +419,7 @@ function mostrarTexto35() {
 					<li>Babados na cabeça</li>
 					<li>Rosto "esmagado"</li>
 					<li>Três barbatanas na cauda</li>
-					<li>Garras em forma de gancho</li>/ul>`;
+					<li>Garras em forma de gancho</li></ul>`;
 }
 
 function mostrarTexto36() {
@@ -693,7 +668,7 @@ function mostrarTexto54() {
 }
 
 function mostrarTextoAlert18() {
-    document.getElementById('tex19').innerHTML = `<div class="alert alert-danger" role="alert">
+    document.getElementById('tex18').innerHTML = `<div class="alert alert-danger" role="alert">
  	Todos os dragões têm um ponto cego. Exceto este, não tente lutar, corra e torça para que ele não te veja!`;
 }
 
@@ -701,12 +676,12 @@ function mostrarTexto019() {
     document.getElementById('tex19').innerHTML = ``;
 }
 
-function mostrarTexto55() {
+function mostrarTexto100() {
     document.getElementById('tex19').innerHTML = `<h2>Descrição:</h2><q>É melhor não atrapalhar um Cauda-de-Fogo. Esses dragões territoriais podem cuspir fogo pelas mandíbulas, guelras e caudas!
 Aproximar-se furtivamente de um Cauda-de-Sangue já é difícil, mas encontrar seu ponto fraco durante a batalha é quase impossível!</q>`;
 }
 
-function mostrarTexto56() {
+function mostrarTexto101() {
     document.getElementById('tex19').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Dois conjuntos de asas</li>
@@ -717,7 +692,7 @@ function mostrarTexto56() {
 				</ul>`;
 }
 
-function mostrarTexto57() {
+function mostrarTexto102() {
     document.getElementById('tex19').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Chamas escarlates</li>
