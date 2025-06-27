@@ -1,3 +1,13 @@
+const carousel = document.getElementById('meuCarrossel');
+
+carousel.addEventListener('slide.bs.carousel', function () {
+	const videos = carousel.querySelectorAll('video');
+	videos.forEach(video => {
+		video.pause();
+		video.currentTime = 0; // opcional: reinicia o vídeo
+	});
+});
+
 let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
 

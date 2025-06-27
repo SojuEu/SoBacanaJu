@@ -16,7 +16,6 @@ body {
   flex-direction: column;
 }
 
-
 article{
   display: flex;
   justify-content: center;
@@ -98,6 +97,11 @@ article{
 
 }
 
+.carousel-caption {
+  color: white;
+  text-shadow: 2px 3px 4px rgb(0, 0, 0);
+}
+
 .head-container {
   display: flex;
   flex-direction: column;
@@ -134,6 +138,11 @@ hr{
 
 .img-max-heigh2 {
   height: 220px;
+  width: auto;
+}
+
+.img-max-heigh3 {
+  max-height: 500px;
   width: auto;
 }
 
