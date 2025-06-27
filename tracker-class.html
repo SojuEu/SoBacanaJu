@@ -16,7 +16,7 @@
 
 <style>
 	article {
-		background-image: url(img/nightfurypresent-img.jpg);
+		background-image: url(img/trackerback.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -29,7 +29,7 @@
 	<!-- Início do Nav -->
 	<nav class="navbar navbar-expand-lg bg-dark nav-underline sticky-top">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="index.html">
 				<!-- Img da logo no nav -->
 				<img src="img/brasaoberk.svg" style="max-height: 40px;"
 					class="d-inline-block align-text-top img-fluid"></a>
@@ -62,7 +62,7 @@
 							<li><a class="dropdown-item" href="filme-dois.html">Como Treinar O Seu Dragão 2</a></li>
 							<li><a class="dropdown-item" href="filme-tres.html">Como Treinar O Seu Dragão 3</a></li>
 							<li><a class="dropdown-item" href="filme-live-action.html">Como Treinar O Seu Dragão Live
-									Action <span class="badge text-bg-success">Novo</span></a></li>
+									Action</a></li>
 						</ul>
 					</li>
 					<!-- Fim do dropdown -->
@@ -107,7 +107,8 @@
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item" aria-current="page" style="color: rgb(218, 0, 0);" href="tracker-class.html">
+								<a class="dropdown-item" aria-current="page" style="color: rgb(218, 0, 0);"
+									href="tracker-class.html">
 									<img src="img/tracker-img-bg.svg" class="img-fluid small" alt="Classe Tracker">
 									Tracker
 								</a>
@@ -134,40 +135,317 @@
 	</nav>
 	<!-- Fim do Nav -->
 
-	<article id="inicio-curtas">
-
+	<article>
 		<div class="container">
-
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a class="link-danger" href="index.html">Início</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Classe Tracker</li>
+					<li class="breadcrumb-item"><a class=" link-danger" href="index.html">Início</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Dragões: Corrida Até O Limite</li>
 				</ol>
 			</nav>
 
-			<div class="container-content">
+			<header class="head-container">
+				<img src="img/trakertop.webp" class="img-fluid rounded" alt="">
 
-				
+				<h4>A Classe Rastreador é a mais nova classe de dragões, descoberta durante os eventos de Corrida até o
+					Limite . Caçadores natos, os dragões da Classe Rastreador possuem olfato e paladar apurados, o que
+					lhes permite rastrear e encontrar qualquer coisa sem esforço.</h4>
+			</header>
+			<h1>Dragões:</h1>
+			<div class="mb-3">
+				<div class="row align-items-stretch mb-3">
+					<div class="col-md-5 d-flex flex-column">
+						<div class="card flex-fill rounded-0">
+							<img src="img/rumblehorn.webp" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Rumblehorn</h5>
+								<q class="card-text"> Rumblehorns disparam projéteis de fogo de longo alcance que
+									explodem com o impacto. Eles conseguem farejar qualquer coisa a quilômetros de
+									distância, mesmo com apenas um leve cheiro de capacete.</q>
+							</div>
+						</div>
+					</div>
 
-				
+					<div class="col-md-7">
+						<div id="carouselExampleIndicators" class="carousel slide h-100">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+									class="active" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+									aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+									aria-label="Slide 3"></button>
+							</div>
+							<div class="carousel-inner h-100">
+								<div class="carousel-item active h-100">
+									<img src="img/rumblehornart.jpg" class="d-block w-100 h-100 object-fit-cover"
+										alt="...">
+								</div>
+								<div class="carousel-item h-100">
+									<img src="img/rumblehorn2.webp" class="d-block w-100 h-100 object-fit-cover"
+										alt="...">
+								</div>
+								<div class="carousel-item h-100">
+									<img src="img/rumblehorn1.jpg" class="d-block w-100 h-100 object-fit-cover"
+										alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button"
+								data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Anterior</span>
+							</button>
+							<button class="carousel-control-next" type="button"
+								data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Próximo</span>
+							</button>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-12">
+							<div class="d-flex flex-wrap justify-content-center">
+								<button type="button" class="btn btn-dark rounded-0"
+									onclick="mostrarTexto031()">Ocultar</button>
+								<button type="button" class="btn btn-dark rounded-0"
+									onclick="mostrarTexto88()">Descrição</button>
+								<button type="button" class="btn btn-dark rounded-0"
+									onclick="mostrarTexto89()">Características</button>
+								<button type="button" class="btn btn-dark rounded-0"
+									onclick="mostrarTexto90()">Habilidades</button>
+								<button type="button" class="btn btn-danger rounded-0"
+									onclick="mostrarTextoAlert31()">PERIGO:
+									MORTAL</button>
+							</div>
+							<div class="mt-4">
+								<div id="tex31" class="fs-5"></div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion w-100" id="accordionExample" data-bs-theme="dark">
+						<div class="row mt-5">
+							<div class="col-12">
+								<h3 class="text-center mb-3">Aparições:</h3>
+								<div class="accordion rounded-0" id="accordionExample" data-bs-theme="dark">
+									<div class="accordion-item rounded-0">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed rounded-0" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseOne"
+												aria-expanded="false" aria-controls="collapseOne">
+												Dragões: Corrida até o Limite Temporada 1
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse">
+											<div class="accordion-body">
+												<p>Em " Esmagando ", Soluço e sua turma enfrentam um novo dragão
+													estranho que tem atacado dragões nativos e aparentemente destruído a
+													Borda do Dragão . Soluço o batizou de Rumblehorn. Eles pedem a Bocão
+													para construir uma fortaleza, mas sem sucesso. Eventualmente, Soluço
+													permite que seu pai, Stoico, os ajude a se livrar do rebelde
+													Rumblehorn, mas ele sempre os supera. De volta à Borda, ele tentou
+													atacar Bocão, e Banguela foi instruído a abatê-lo. Sentindo que algo
+													não estava certo, Stoico domesticou o Rumblehorn e levou a turma
+													para o mar. Soluço então percebeu que uma grande onda, forte o
+													suficiente para destruir a Borda, estava vindo em sua direção, e o
+													Rumblehorn estava tentando afastá-los da ilha para salvá-los.
+													Eventualmente, eles trabalharam juntos para cercar a ilha com a
+													fortaleza de Bocão e o Rumblehorn, junto com Stoico, derrubou uma
+													chaminé marítima bem a tempo de parar a onda. Stoick então mantém o
+													Rumblehorn como substituto de Thornado e o chama de Skullcrusher .
+													Essa descoberta permitiu que os Cavaleiros de Dragão criassem a
+													Classe Rastreador .</p>
+											</div>
+										</div>
+									</div>
 
+									<div class="accordion-item rounded-0">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed rounded-0" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+												aria-expanded="false" aria-controls="collapseTwo">
+												Dragões: Corrida até o Limite Temporada 3
+											</button>
+										</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse">
+											<div class="accordion-body">
+												<p>Em " Família no Limite ", quando Soluço e Astrid discutem o plano de
+													atacar o estaleiro de Viggo , Astrid deseja falar sobre Dagur , e
+													afirma: "Podemos falar sobre o Rumblehorn na sala?". Esta é uma
+													frase baseada na expressão " Elefante na sala".</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item rounded-0">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed rounded-0" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseThree"
+												aria-expanded="false" aria-controls="collapseThree">
+												Dragões: Corrida até o Limite Temporada 4
+											</button>
+										</h2>
+										<div id="collapseThree" class="accordion-collapse collapse">
+											<div class="accordion-body">
+												<p>Em " Dire Straits ", enquanto treinam com os Terrores Noturnos ,
+													Soluço e Perna-de-Peixe os observam fazendo uma formação de um
+													Rumblehorn, o que impressiona Perna-de-Peixe, embora eles estivessem
+													tentando alertá-los de que Stoico e Esmagador de Crânios haviam
+													chegado.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item rounded-0">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed rounded-0" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseFour"
+												aria-expanded="false" aria-controls="collapseFour">
+												Dragões: Corrida até o Limite Temporada 5
+											</button>
+										</h2>
+										<div id="collapseFour" class="accordion-collapse collapse">
+											<div class="accordion-body">
+												<p>Em " As Asas da Guerra, Parte 1 ", Stoico tem um flashback de uma
+													reunião de chefes tribais, onde, após zombarem da oferta de Drago
+													Bludvist , ele mandou dragões blindados incendiarem o Grande Salão
+													com eles dentro. Stoico foi mostrado escapando, mas ao olhar para o
+													penhasco, viu Drago e Krogan observando os outros chefes queimarem
+													antes de partirem nas costas de dois Rumblehorns.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item rounded-0">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed rounded-0" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseFive"
+												aria-expanded="false" aria-controls="collapseFive">
+												Como Treinar o Seu Dragão: O Mundo Oculto
+											</button>
+										</h2>
+										<div id="collapseFive" class="accordion-collapse collapse">
+											<div class="accordion-body">
+												<p>Um Rumblehorn roxo cativo é mostrado resistindo contra os Dragon
+													Trappers , nos quais ele os sacode e ataca Grimmel e os Warlords
+													assim que se liberta de suas amarras. No entanto, Grimmel
+													rapidamente subjuga o dragão com sua besta , atirando um dardo
+													envenenado nele e o colocando para dormir. Mais tarde, alguns
+													Rumblehorns estavam entre a miríade de dragões que residem no Mundo
+													Oculto que se curvaram diante de Banguela e da Fúria da Luz Sem Nome
+													, mostrando respeito por seu alfa . Embora Soluço e Astrid
+													inadvertidamente tenham despertado um Rumblehorn adormecido, que
+													então rugiu para os intrusos, alertando assim todos os outros
+													dragões. O Rumblehorn perseguiu Soluço e Astrid a pé até que
+													Banguela e Stormfly agarraram os dois antes de levá-los para fora do
+													Mundo Oculto.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="mb-3">
+				<div class="row align-items-stretch mb-3">
+					<div class="col-md-5 d-flex flex-column">
+						<div class="card flex-fill rounded-0">
+							<img src="img/hideouszippleback.webp" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Zíperarrepiante</h5>
+								<q class="card-text">Um Zippleback? Exótico. Duas cabeças, o dobro de status.</q>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-7">
+						<div id="rubro" class="carousel slide h-100">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#rubro" data-bs-slide-to="0" class="active"
+									aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#rubro" data-bs-slide-to="1"
+									aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#rubro" data-bs-slide-to="2"
+									aria-label="Slide 3"></button>
+							</div>
+							<div class="carousel-inner h-100">
+								<div class="carousel-item active h-100">
+									<img src="img/hideouszipplebackart.jpg" class="d-block w-100 h-100 object-fit-cover"
+										alt="...">
+								</div>
+								<div class="carousel-item h-100">
+									<img src="img/hideouszippleback1.jpg" class="d-block w-100 h-100 object-fit-cover"
+										alt="...">
+								</div>
+								<div class="carousel-item h-100">
+									<img src="img/hideouszippleback2.jpg" class="d-block w-100 h-100 object-fit-cover"
+										alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#rubro"
+								data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Anterior</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#rubro"
+								data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Próximo</span>
+							</button>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-12">
+							<div class="d-flex flex-wrap justify-content-center">
+								<button type="button" class="btn btn-dark rounded-0"
+									onclick="mostrarTexto032()">Ocultar</button>
+								<button type="button" class="btn btn-dark rounded-0"
+									onclick="mostrarTexto91()">Descrição</button>
+								<button type="button" class="btn btn-dark rounded-0"
+									onclick="mostrarTexto92()">Características</button>
+								<button type="button" class="btn btn-dark rounded-0"
+									onclick="mostrarTexto93()">Habilidades</button>
+								<button type="button" class="btn btn-danger rounded-0"
+									onclick="mostrarTextoAlert32()">PERIGO:
+									MORTAL</button>
+							</div>
+							<div class="mt-4">
+								<div id="tex32" class="fs-5"></div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion w-100" id="accordionExample" data-bs-theme="dark">
+						<div class="row mt-5">
+							<div class="col-12">
+								<h3 class="text-center mb-3">Aparições: Todos os episódios e filmes</h3>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-
 	</article>
 
 
+
 	<footer>
-		<a href="#inicio-curtas">
-			<button type="button" class="btn btn-outline-danger">Voltar</button>
+		<a class="icon-link icon-link-hover link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+			style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">
+			Voltar ao início
+			<svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+				<path
+					d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+			</svg>
 		</a>
-		<p><br>Copyright &copy; Soju e Bacana 2025.</p>
+		<p>Copyright &copy; Soju e Bacana 2025.</p>
 	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/javascript.js"></script>
 
+	<!-- https://ping-xiong.github.io/Dragons-Race-to-the-Edge-Interactive-Map-Backup/#/map -->
 </body>
 
 </html>

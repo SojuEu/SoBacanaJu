@@ -2,27 +2,27 @@ let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-        // rolando para baixo
-        navbar.style.top = '-80px'; // Esconde
-    } else {
-        // rolando para cima
-        navbar.style.top = '0'; // Mostra
-    }
+	if (scrollTop > lastScrollTop) {
+		// rolando para baixo
+		navbar.style.top = '-80px'; // Esconde
+	} else {
+		// rolando para cima
+		navbar.style.top = '0'; // Mostra
+	}
 
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // evita valor negativo
+	lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // evita valor negativo
 });
 
 function mostrarTexto1() {
-    document.getElementById('tex1').innerHTML = `<h2>Descrição:</h2><q>Tente se aproximar deste dragão... se conseguir encontrar um. Seu hálito tóxico e
+	document.getElementById('tex1').innerHTML = `<h2>Descrição:</h2><q>Tente se aproximar deste dragão... se conseguir encontrar um. Seu hálito tóxico e
 					sua cauda afiada os tornam perigosos de cima a baixo!
 					Não chegue muito perto! Este dragão respira toxinas em seus inimigos. Que mau hálito!</q>`;
 }
 
 function mostrarTexto2() {
-    document.getElementById('tex1').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex1').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Chifre no focinho</li>
 					<li>Espinhos afiados</li>
@@ -32,7 +32,7 @@ function mostrarTexto2() {
 }
 
 function mostrarTexto3() {
-    document.getElementById('tex1').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex1').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
                 <li>Tipo de fogo: Fogo azul brilhante</li>
 					<li>Cauda preênsil afiada e telescópica que pode ser usada como chicote</li>
@@ -44,29 +44,29 @@ function mostrarTexto3() {
 }
 
 function mostrarTexto01() {
-    document.getElementById('tex1').innerHTML = ``;
+	document.getElementById('tex1').innerHTML = ``;
 }
 
 function mostrarTextoAlert1() {
-    document.getElementById('tex1').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex1').innerHTML = `<div class="alert alert-danger" role="alert">
 EXTREMAMENTE PERIGOSO, MATAR NA HORA!
 </div>`;
 }
 
 function mostrarTexto4() {
-    document.getElementById('tex2').innerHTML = `<h2>Descrição:</h2>
+	document.getElementById('tex2').innerHTML = `<h2>Descrição:</h2>
 <q>Terremotos Catastróficos são conhecidos por suas atitudes cruéis. Eles não deixam ninguém atrapalhar e fazem de tudo para causar estragos em seus alvos.
 Terremotos Catastróficos comem mais pedras do que qualquer outro da sua classe! Eles também têm o péssimo hábito de cuspir pedras digeridas nos atacantes na forma de lava incandescente!</q>`;
 }
 
 function mostrarTexto5() {
-    document.getElementById('tex2').innerHTML = `<h2>Características:</h2><ul><li>Cheio de espinhos</li><li>Mandíbula
+	document.getElementById('tex2').innerHTML = `<h2>Características:</h2><ul><li>Cheio de espinhos</li><li>Mandíbula
 triplamente dividida</li><li>Pele
 dura como rocha</li></ul>`;
 }
 
 function mostrarTexto6() {
-    document.getElementById('tex2').innerHTML = `<h2>Habilidades:</h2><ul>
+	document.getElementById('tex2').innerHTML = `<h2>Habilidades:</h2><ul>
     <li>Tipo de tiro:
 					Baba de magma de mandíbulas trifurcadas</li>
 					<li>Enrolando-se em uma pedra,
@@ -75,24 +75,24 @@ function mostrarTexto6() {
 }
 
 function mostrarTexto02() {
-    document.getElementById('tex2').innerHTML = ``;
+	document.getElementById('tex2').innerHTML = ``;
 }
 
 function mostrarTextoAlert2() {
-    document.getElementById('tex2').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex2').innerHTML = `<div class="alert alert-danger" role="alert">
 DEMONIO POR TRÁS DOS TREMORES DA TERRA, EXTREMAMENTE PERIGOSO, MATAR NA HORA!
 </div>`;
 }
 
 function mostrarTexto7() {
-    document.getElementById('tex3').innerHTML = `<h2>Descrições:</h2><q>Embora os Goregutters tenham conjuntos impressionantes de chifres e caudas em forma de
+	document.getElementById('tex3').innerHTML = `<h2>Descrições:</h2><q>Embora os Goregutters tenham conjuntos impressionantes de chifres e caudas em forma de
 machado, eles são mais gentis do que aparentam e gostam de ficar em paz. Em batalha, porém, eles têm a
 capacidade de cuspir lava derretida em seus chifres antes de atacar os oponentes com força
 impetuosa.</q>`;
 }
 
 function mostrarTexto8() {
-    document.getElementById('tex3').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex3').innerHTML = `<h2>Características:</h2>
 <ul>
 <li>Chifres metálicos semelhantes aos de alce</li>
 <li>Cauda em forma de machado</li>
@@ -101,7 +101,7 @@ function mostrarTexto8() {
 }
 
 function mostrarTexto9() {
-    document.getElementById('tex3').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex3').innerHTML = `<h2>Habilidades:</h2>
 <ul>
 <li>Tipo de tiro: Lava derretida</li>
 <li>Chifres flamejantes</li>
@@ -110,17 +110,17 @@ function mostrarTexto9() {
 }
 
 function mostrarTexto03() {
-    document.getElementById('tex3').innerHTML = ``;
+	document.getElementById('tex3').innerHTML = ``;
 }
 
 function mostrarTextoAlert3() {
-    document.getElementById('tex3').innerHTML = `<div class="alert alert-success" role="alert">
+	document.getElementById('tex3').innerHTML = `<div class="alert alert-success" role="alert">
 ESTE DRAGÃO... é de boa, simpatico, NÃO O MACHUQUE!
 </div>`;
 }
 
 function mostrarTexto10() {
-    document.getElementById('tex4').innerHTML = `<h2>Descrições:</h2><q>A temperatura corporal de Eruptodon está diretamente ligada à sua experiência.
+	document.getElementById('tex4').innerHTML = `<h2>Descrições:</h2><q>A temperatura corporal de Eruptodon está diretamente ligada à sua experiência.
 				Quando
 				seu poder atinge o pico, sua pele brilha.
 				Embora não seja um guerreiro, este dragão libera uma violência explosiva quando em apuros. Quase imune a
@@ -128,7 +128,7 @@ function mostrarTexto10() {
 }
 
 function mostrarTexto11() {
-    document.getElementById('tex4').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex4').innerHTML = `<h2>Características:</h2>
 			<ul>
 				<li>Lóbulos pontiagudos e saliências nas costas e na cauda</li>
 				<li>Cabeça grande e redonda</li>
@@ -138,7 +138,7 @@ function mostrarTexto11() {
 }
 
 function mostrarTexto12() {
-    document.getElementById('tex4').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex4').innerHTML = `<h2>Habilidades:</h2>
 			<ul>
             <li>Tipo de tiro:
 					Explosão de lava em grande escala</li>
@@ -151,17 +151,17 @@ function mostrarTexto12() {
 }
 
 function mostrarTexto04() {
-    document.getElementById('tex4').innerHTML = ``;
+	document.getElementById('tex4').innerHTML = ``;
 }
 
 function mostrarTextoAlert4() {
-    document.getElementById('tex4').innerHTML = `<div class="alert alert-warning" role="alert">
+	document.getElementById('tex4').innerHTML = `<div class="alert alert-warning" role="alert">
 ENORME E PODEROSO, UM VULCÃO AMBULANTE COM ASAS, POREM... é docil, NÃO O MACHUQUE!
 </div>`;
 }
 
 function mostrarTexto13() {
-    document.getElementById('tex5').innerHTML = `<h2>Descrição:</h2><q>Embora cegos, os Sentinelas ainda vigiam de perto o Cemitério dos Dragões na Ilha de
+	document.getElementById('tex5').innerHTML = `<h2>Descrição:</h2><q>Embora cegos, os Sentinelas ainda vigiam de perto o Cemitério dos Dragões na Ilha de
 				Vanaheim.
 				Esses enormes e pétreos Dragões demonstram pouca fraqueza, mas uma mente astuta pode explorar sua
 				cegueira. Mas cuidado: eles têm um olfato apurado.</q>`;
@@ -169,7 +169,7 @@ function mostrarTexto13() {
 
 
 function mostrarTexto14() {
-    document.getElementById('tex5').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex5').innerHTML = `<h2>Características:</h2>
 			<ul>
 				<li>Corpo grande coberto por camadas epidérmicas e escamas duras semelhantes a rochas.</li>
 				<li>Cauda arredondada.</li>
@@ -177,7 +177,7 @@ function mostrarTexto14() {
 }
 
 function mostrarTexto15() {
-    document.getElementById('tex5').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex5').innerHTML = `<h2>Habilidades:</h2>
 			<ul>
             <li>Tipo de tiro: Fogo de pira funerária/Grito sônico</li>
 				<li>Explosões de asas</li>
@@ -188,17 +188,17 @@ function mostrarTexto15() {
 }
 
 function mostrarTexto05() {
-    document.getElementById('tex5').innerHTML = ``;
+	document.getElementById('tex5').innerHTML = ``;
 }
 
 function mostrarTextoAlert5() {
-    document.getElementById('tex5').innerHTML = `<div class="alert alert-success" role="alert">
+	document.getElementById('tex5').innerHTML = `<div class="alert alert-success" role="alert">
 PODE PARECER QUE ESTA DORMINDO, e realmente ele deve estar, NÃO O MACHUQUE!
 </div>`;
 }
 
 function mostrarTexto16() {
-    document.getElementById('tex6').innerHTML = `<h2>Descrição:</h2><q>Nascido a cada cem anos ou mais, o Screaming Death tem todas as forças de seu primo
+	document.getElementById('tex6').innerHTML = `<h2>Descrição:</h2><q>Nascido a cada cem anos ou mais, o Screaming Death tem todas as forças de seu primo
 				subordinado, o Whispering Death, sem nenhuma de suas fraquezas.
 				É o dragão mais poderoso que Berk enfrentou desde o Red Death . Ao contrário do Whispering Death , este
 				dragão não tem aversão à luz do sol. Na verdade, os jovens Screaming Deaths são atraídos pela luz
@@ -216,7 +216,7 @@ function mostrarTexto16() {
 }
 
 function mostrarTexto17() {
-    document.getElementById('tex6').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex6').innerHTML = `<h2>Características:</h2>
 			<ul>
 				<li>
 					Corpo longo semelhante ao de uma cobra</li>
@@ -231,7 +231,7 @@ function mostrarTexto17() {
 }
 
 function mostrarTexto18() {
-    document.getElementById('tex6').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex6').innerHTML = `<h2>Habilidades:</h2>
 			<ul>
             <li>Tipo de tiro: Lança anéis concêntricos de bolas de fogo , cuspindo várias bolas de fogo em um único tiro.</li>
 				<li>Tiro na espinha</li>
@@ -242,44 +242,44 @@ function mostrarTexto18() {
 }
 
 function mostrarTexto06() {
-    document.getElementById('tex6').innerHTML = ``;
+	document.getElementById('tex6').innerHTML = ``;
 }
 
 function mostrarTextoAlert6() {
-    document.getElementById('tex6').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex6').innerHTML = `<div class="alert alert-danger" role="alert">
 ESTE DRAGÃO É A CRIAÇÃO MALIGNA DA MORTE, NÃO SE APROXIME, VOCÊ JAMAS PODERA VENCE-LO!
 </div>`;
 }
 
 function mostrarTexto19() {
-    document.getElementById('tex7').innerHTML = `<h2>Descrição:</h2>
+	document.getElementById('tex7').innerHTML = `<h2>Descrição:</h2>
 				<q>Este necrófago da Classe Mistério se cobre de ossos para proteger seu corpo delicado. Sua escolha de armadura o torna impopular entre outros Dragões!
 O Quebra-Ossos está bem protegido em sua armadura enquanto se aproxima e dispara um potente jato de fogo contra seus oponentes em fuga.</q>`;
 }
 
 function mostrarTexto20() {
-    document.getElementById('tex7').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex7').innerHTML = `<h2>Características:</h2>
 				<ul><li>Armadura óssea</li><li>Cauda em forma de clava</li></ul>`;
 }
 
 function mostrarTexto21() {
-    document.getElementById('tex7').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex7').innerHTML = `<h2>Habilidades:</h2>
 				<ul><li>Tipo de fogo:
 Chamas ondulantes</li><li>Armadura de osso</li><li>Rugido estrondoso</li></ul>`;
 }
 
 function mostrarTexto07() {
-    document.getElementById('tex7').innerHTML = ``;
+	document.getElementById('tex7').innerHTML = ``;
 }
 
 function mostrarTextoAlert7() {
-    document.getElementById('tex7').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex7').innerHTML = `<div class="alert alert-danger" role="alert">
 ROUBA OSSOS PARA SI, E ADIVINHA, VC TEM BELOS OSSOS, EXTREMAMENTE PERIGOSO!
 `;
 }
 
 function mostrarTexto22() {
-    document.getElementById('tex8').innerHTML = `<h2>Descrição:</h2><q>Não se deixe enganar pelo seu comportamento dócil! Considerado extinto, este dragão
+	document.getElementById('tex8').innerHTML = `<h2>Descrição:</h2><q>Não se deixe enganar pelo seu comportamento dócil! Considerado extinto, este dragão
 				já enorme dobrará de tamanho e se tornará extremamente agressivo se for removido de sua fonte de
 				alimento.
 				Em batalha (ou longe de sua comida), este dragão pode inchar e revelar espinhos que o cobrem da cabeça à
@@ -287,58 +287,58 @@ function mostrarTexto22() {
 }
 
 function mostrarTexto23() {
-    document.getElementById('tex8').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex8').innerHTML = `<h2>Características:</h2>
 			<ul><li>Corpo blindado</li><li>Chifres semelhantes aos de carneiro</li><li>Pequenas fileiras de espinhos ao longo das costas</li><li>Pernas curtas</li></ul>`;
 }
 
 function mostrarTexto24() {
-    document.getElementById('tex8').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex8').innerHTML = `<h2>Habilidades:</h2>
 			<ul><li>Tipo de fogo:
 Chamas explosivas</li><li>Inflando seu corpo a um tamanho imenso</li><li>Disparando espinhos de qualquer parte do corpo</li><li>Saliva extremamente potente</li></ul>`;
 }
 
 function mostrarTexto08() {
-    document.getElementById('tex8').innerHTML = ``;
+	document.getElementById('tex8').innerHTML = ``;
 }
 
 function mostrarTextoAlert8() {
-    document.getElementById('tex8').innerHTML = `<div class="alert alert-success" role="alert">
+	document.getElementById('tex8').innerHTML = `<div class="alert alert-success" role="alert">
 coisa fofa, cute cute, não se deixe enganar ele é perigoso, mas é fofo`
 }
 
 function mostrarTexto25() {
-    document.getElementById('tex9').innerHTML = `<h2>Descrição:</h2><q>Este especialista em camuflagem da Classe Mistério é capaz de disparar ácido
+	document.getElementById('tex9').innerHTML = `<h2>Descrição:</h2><q>Este especialista em camuflagem da Classe Mistério é capaz de disparar ácido
 					corrosivo quente capaz de queimar madeira e rocha (e vikings!).
 					A Asa Transformadora distrai oponentes à distância enquanto lança bolas de ácido em sua direção.</q>`;
 }
 
 function mostrarTexto26() {
-    document.getElementById('tex9').innerHTML = `<h2>Características:</h2><ul><li>Chifres laterais projetando-se da cabeça</li><li>Antenas com lóbulos em forma de folha</li><li>Mordida inferior
+	document.getElementById('tex9').innerHTML = `<h2>Características:</h2><ul><li>Chifres laterais projetando-se da cabeça</li><li>Antenas com lóbulos em forma de folha</li><li>Mordida inferior
 Corno nasal</li></ul>`;
 }
 
 function mostrarTexto27() {
-    document.getElementById('tex9').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex9').innerHTML = `<h2>Habilidades:</h2>
 				<ul><li>Tipo de fogo:
 Ácido quente, corrosivo e viscoso que pode queimar madeira, rocha e metal à prova de dragões</li><li>Camuflagem</li><li>Cauda preênsil</li><li>Hipnose</li><li>Imunidade ao próprio ácido</li></ul>`;
 }
 
 function mostrarTexto09() {
-    document.getElementById('tex9').innerHTML = ``;
+	document.getElementById('tex9').innerHTML = ``;
 }
 
 function mostrarTextoAlert9() {
-    document.getElementById('tex9').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex9').innerHTML = `<div class="alert alert-danger" role="alert">
 CUIDADO, VOCÊ NÃO PODE VE-LO, MAS ELE PODE VER VOCÊ, MATAR NA HORA!`;
 }
 
 function mostrarTexto28() {
-    document.getElementById('tex10').innerHTML = `<h2>Descrição:</h2><q>Este Dragão usa seu chamado melódico para atrair seus alvos para as densas selvas
+	document.getElementById('tex10').innerHTML = `<h2>Descrição:</h2><q>Este Dragão usa seu chamado melódico para atrair seus alvos para as densas selvas
 					da Ilha da Melodia. Lá, ele pode observá-los enquanto eles buscam a fonte da música.</q>`;
 }
 
 function mostrarTexto29() {
-    document.getElementById('tex10').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex10').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Asas coloridas</li>
 					<li>Barbatanas na cabeça</li>
@@ -349,7 +349,7 @@ function mostrarTexto29() {
 }
 
 function mostrarTexto30() {
-    document.getElementById('tex10').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex10').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo:
 						Substância semelhante ao âmbar que endurece rapidamente</li>
@@ -360,23 +360,23 @@ function mostrarTexto30() {
 }
 
 function mostrarTexto110() {
-    document.getElementById('tex10').innerHTML = ``;
+	document.getElementById('tex10').innerHTML = ``;
 }
 
 function mostrarTextoAlert010() {
-    document.getElementById('tex10').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex10').innerHTML = `<div class="alert alert-danger" role="alert">
 SE OUVIR SEU CANTO, VOCÊ ESTÁ MORTO, ESCONDASSE E TAPE OS OUVIDOS!`;
 }
 
 function mostrarTexto31() {
-    document.getElementById('tex11').innerHTML = `<h2>Descrição:</h2><q>Os Dramillions são frequentemente chamados de papagaios do mundo dos dragões,
+	document.getElementById('tex11').innerHTML = `<h2>Descrição:</h2><q>Os Dramillions são frequentemente chamados de papagaios do mundo dos dragões,
 					pois essas criaturas misteriosas conseguem reproduzir qualquer tipo de dragão que veem!
 					Os Dramillions têm, de longe, o maior número de disparos entre todas as espécies. E se um deles
 					ficar sem cio, o resto da matilha compartilha suas reservas!</q>`;
 }
 
 function mostrarTexto32() {
-    document.getElementById('tex11').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex11').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Cabeça pontiaguda</li>
 					<li>Membros anteriores pequenos</li>
@@ -385,7 +385,7 @@ function mostrarTexto32() {
 }
 
 function mostrarTexto33() {
-    document.getElementById('tex11').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex11').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo:
 						Fac-símiles flamejantes</li>
@@ -396,16 +396,16 @@ function mostrarTexto33() {
 }
 
 function mostrarTexto011() {
-    document.getElementById('tex11').innerHTML = ``;
+	document.getElementById('tex11').innerHTML = ``;
 }
 
 function mostrarTextoAlert11() {
-    document.getElementById('tex11').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex11').innerHTML = `<div class="alert alert-danger" role="alert">
 CUIDADE, ESTE DRAGÃO ATACA EM BANDO, ONDE TEM 1 TEM VÁRIOS, MATAR NA HORA!`;
 }
 
 function mostrarTexto34() {
-    document.getElementById('tex12').innerHTML = `<h2>Descrição:</h2><q>O voador da Classe Sharp, com suas quatro asas, consegue virar a cabeça tanto que
+	document.getElementById('tex12').innerHTML = `<h2>Descrição:</h2><q>O voador da Classe Sharp, com suas quatro asas, consegue virar a cabeça tanto que
 					consegue enxergar atrás. Você nunca conseguirá se aproximar furtivamente de um Cortador de
 					Tempestades!
 					Voando com quatro asas, o Cortador de Tempestades esculpe espirais no céu e dispara arcos
@@ -413,7 +413,7 @@ function mostrarTexto34() {
 }
 
 function mostrarTexto35() {
-    document.getElementById('tex12').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex12').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Dois pares de asas</li>
 					<li>Babados na cabeça</li>
@@ -423,7 +423,7 @@ function mostrarTexto35() {
 }
 
 function mostrarTexto36() {
-    document.getElementById('tex12').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex12').innerHTML = `<h2>Habilidades:</h2>
 					<ul>
 						<li>Tipo de fogo:
 							Toro de fogo sustentado e ardente</li>
@@ -435,22 +435,22 @@ function mostrarTexto36() {
 }
 
 function mostrarTexto012() {
-    document.getElementById('tex12').innerHTML = ``;
+	document.getElementById('tex12').innerHTML = ``;
 }
 
 function mostrarTextoAlert12() {
-    document.getElementById('tex12').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex12').innerHTML = `<div class="alert alert-danger" role="alert">
 EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto37() {
-    document.getElementById('tex13').innerHTML = `<h2>Descrição:</h2><q>Cuidado, Vikings ! Embora não possam voar, os Ferrões Velozes são os dragões mais
+	document.getElementById('tex13').innerHTML = `<h2>Descrição:</h2><q>Cuidado, Vikings ! Embora não possam voar, os Ferrões Velozes são os dragões mais
 					rápidos em terra ou na água! Suas caudas venenosas podem picar com a mesma rapidez, deixando suas
 					vítimas temporariamente paralisadas.</q>`;
 }
 
 function mostrarTexto38() {
-    document.getElementById('tex13').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex13').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Ferrão afiado como navalha</li>
 					<li>Listras vermelhas (ferrão de chumbo)</li>
@@ -462,7 +462,7 @@ function mostrarTexto38() {
 }
 
 function mostrarTexto39() {
-    document.getElementById('tex13').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex13').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo:
 						Explosão ácida</li>
@@ -473,23 +473,23 @@ function mostrarTexto39() {
 }
 
 function mostrarTexto013() {
-    document.getElementById('tex13').innerHTML = ``;
+	document.getElementById('tex13').innerHTML = ``;
 }
 
 function mostrarTextoAlert13() {
-    document.getElementById('tex13').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex13').innerHTML = `<div class="alert alert-danger" role="alert">
 EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto40() {
-    document.getElementById('tex14').innerHTML = `<h2>Descrição:</h2><q> Arisco e protetor, este planador gracioso da Classe Afiada pode cortar árvores
+	document.getElementById('tex14').innerHTML = `<h2>Descrição:</h2><q> Arisco e protetor, este planador gracioso da Classe Afiada pode cortar árvores
 				enormes com suas asas largas e ultraafiadas. Madeira!
 				As asas do poderoso Timberjack podem absorver uma grande quantidade de dano enquanto ele se prepara para
 				liberar seu ataque de nova de fogo!</q>`;
 }
 
 function mostrarTexto41() {
-    document.getElementById('tex14').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex14').innerHTML = `<h2>Características:</h2>
 			<ul>
 				<li>Enormes asas afiadas</li>
 				<li>Sem pernas</li>
@@ -500,7 +500,7 @@ function mostrarTexto41() {
 }
 
 function mostrarTexto42() {
-    document.getElementById('tex14').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex14').innerHTML = `<h2>Habilidades:</h2>
 			<ul>
 				<li>Tipo de fogo: Fogo à base de óleo</li>
 				<li>Ataque de nova de fogo com fatia de asa</li>
@@ -509,23 +509,23 @@ function mostrarTexto42() {
 }
 
 function mostrarTexto014() {
-    document.getElementById('tex14').innerHTML = ``;
+	document.getElementById('tex14').innerHTML = ``;
 }
 
 function mostrarTextoAlert14() {
-    document.getElementById('tex14').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex14').innerHTML = `<div class="alert alert-danger" role="alert">
 EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto43() {
-    document.getElementById('tex15').innerHTML = `<h2>Descrição:</h2><q>Um dragão da classe Rastreador, vaidoso e agressivo, que atira espinhos. Seu olfato
+	document.getElementById('tex15').innerHTML = `<h2>Descrição:</h2><q>Um dragão da classe Rastreador, vaidoso e agressivo, que atira espinhos. Seu olfato
 				apurado compensa o ponto cego bem na frente do seu nariz.
 				O Nadder Mortal ataca à distância, sempre se mantendo fora do alcance enquanto lança bolas de fogo
 				contra os oponentes.</q>`;
 }
 
 function mostrarTexto44() {
-    document.getElementById('tex15').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex15').innerHTML = `<h2>Características:</h2>
 			<ul>
 				<li>Corno nasal</li>
 				<li>Coroa pontiaguda</li>
@@ -538,7 +538,7 @@ function mostrarTexto44() {
 }
 
 function mostrarTexto45() {
-    document.getElementById('tex15').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex15').innerHTML = `<h2>Habilidades:</h2>
 			<ul>
 				<li>Tipo de fogo:
 					Fogo de magnésio</li>
@@ -550,26 +550,26 @@ function mostrarTexto45() {
 }
 
 function mostrarTexto015() {
-    document.getElementById('tex15').innerHTML = ``;
+	document.getElementById('tex15').innerHTML = ``;
 }
 
 function mostrarTextoAlert15() {
-    document.getElementById('tex15').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex15').innerHTML = `<div class="alert alert-danger" role="alert">
 EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto016() {
-    document.getElementById('tex16').innerHTML = ``;
+	document.getElementById('tex16').innerHTML = ``;
 }
 
 function mostrarTexto46() {
-    document.getElementById('tex16').innerHTML = `<h2>Descrição:</h2><q> Um dragão da classe Stoker, teimoso e tenaz. Cuidado com sua Jaqueta de Fogo: ela se
+	document.getElementById('tex16').innerHTML = `<h2>Descrição:</h2><q> Um dragão da classe Stoker, teimoso e tenaz. Cuidado com sua Jaqueta de Fogo: ela se
 				cobre de chamas ao atacar!
 				O Pesadelo Monstruoso ataca seus inimigos com poderosos jatos de fogo.</q>`;
 }
 
 function mostrarTexto47() {
-    document.getElementById('tex16').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex16').innerHTML = `<h2>Características:</h2>
 			<ul>
 				<li>Asas com garras duplas</li>
 				<li>Dois pares de chifres longos</li>
@@ -583,7 +583,7 @@ function mostrarTexto47() {
 }
 
 function mostrarTexto48() {
-    document.getElementById('tex16').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex16').innerHTML = `<h2>Habilidades:</h2>
 			<ul>
 				<li>Tipo de fogo:
 					Gel de querosene</li>
@@ -596,23 +596,23 @@ function mostrarTexto48() {
 }
 
 function mostrarTextoAlert16() {
-    document.getElementById('tex16').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex16').innerHTML = `<div class="alert alert-danger" role="alert">
  EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto017() {
-    document.getElementById('tex17').innerHTML = ``;
+	document.getElementById('tex17').innerHTML = ``;
 }
 
 function mostrarTexto49() {
-    document.getElementById('tex17').innerHTML = `<h2>Descrição:</h2><q>Esses elusivos Dragões da Classe Stoker podem ser difíceis de lidar! Mas, se
+	document.getElementById('tex17').innerHTML = `<h2>Descrição:</h2><q>Esses elusivos Dragões da Classe Stoker podem ser difíceis de lidar! Mas, se
 					devidamente treinados, permanecem leais e excelentes dragões de guarda.
 					O Terror Noturno prefere lutar ao lado de outros dragões. Mantendo seus oponentes à distância, seu
 					tamanho permanece um mistério.</q>`;
 }
 
 function mostrarTexto50() {
-    document.getElementById('tex17').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex17').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Chifre nasal duplo</li>
 					<li>Chifre sob o queixo</li>
@@ -621,7 +621,7 @@ function mostrarTexto50() {
 }
 
 function mostrarTexto51() {
-    document.getElementById('tex17').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex17').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo:
 						Vários fluxos discretos de fogo de cada dragão se fundem em uma bola de fogo gigante quando em
@@ -631,23 +631,23 @@ function mostrarTexto51() {
 }
 
 function mostrarTextoAlert17() {
-    document.getElementById('tex17').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex17').innerHTML = `<div class="alert alert-danger" role="alert">
  EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto018() {
-    document.getElementById('tex18').innerHTML = ``;
+	document.getElementById('tex18').innerHTML = ``;
 }
 
 function mostrarTexto52() {
-    document.getElementById('tex18').innerHTML = `<h2>Descrição:</h2><q>Secretamente responsável por séculos de conflitos entre humanos e dragões, a Morte Vermelha usou sua presença dominante para ordenar que outros dragões atacassem aldeias próximas e lhe trouxessem um suprimento constante de comida.
+	document.getElementById('tex18').innerHTML = `<h2>Descrição:</h2><q>Secretamente responsável por séculos de conflitos entre humanos e dragões, a Morte Vermelha usou sua presença dominante para ordenar que outros dragões atacassem aldeias próximas e lhe trouxessem um suprimento constante de comida.
 De seu covil nas profundezas da coroa de um vulcão, esta Asa Titânica reinou suprema, até que Banguela liderou Stoico , Bocão e os outros vikings de Berk para as costas devastadas da Ilha do Dragão .
 A Morte Vermelha estava tão absorta em poder nessa época que teve que destruir seu lar nas montanhas para emergir e lutar contra esses intrusos humanos. Felizmente, a chegada oportuna dos cavaleiros de dragões de Berk e o fatídico reencontro de Soluço e Banguela levaram à descoberta do único ponto vulnerável da Morte Vermelha: suas entranhas.
 Semelhante à habilidade da Besta Perplexa de dobrar outros dragões à sua vontade, a Morte Vermelha emitiu um sinal de retorno que convocou outros dragões para seu ninho coberto de lava. Esse chamado foi produzido por uma combinação de ululação subvocal e o olhar assustador de seus muitos, muitos olhos!</q>`;
 }
 
 function mostrarTexto53() {
-    document.getElementById('tex18').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex18').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Cauda em forma de clava</li>
 					<li>Três pares de olhos</li>
@@ -658,7 +658,7 @@ function mostrarTexto53() {
 }
 
 function mostrarTexto54() {
-    document.getElementById('tex18').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex18').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Metano</li>
 					<li>Emite sinal de orientação para controlar outros dragões</li>
@@ -668,21 +668,21 @@ function mostrarTexto54() {
 }
 
 function mostrarTextoAlert18() {
-    document.getElementById('tex18').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex18').innerHTML = `<div class="alert alert-danger" role="alert">
  	Todos os dragões têm um ponto cego. Exceto este, não tente lutar, corra e torça para que ele não te veja!`;
 }
 
 function mostrarTexto019() {
-    document.getElementById('tex19').innerHTML = ``;
+	document.getElementById('tex19').innerHTML = ``;
 }
 
 function mostrarTexto100() {
-    document.getElementById('tex19').innerHTML = `<h2>Descrição:</h2><q>É melhor não atrapalhar um Cauda-de-Fogo. Esses dragões territoriais podem cuspir fogo pelas mandíbulas, guelras e caudas!
+	document.getElementById('tex19').innerHTML = `<h2>Descrição:</h2><q>É melhor não atrapalhar um Cauda-de-Fogo. Esses dragões territoriais podem cuspir fogo pelas mandíbulas, guelras e caudas!
 Aproximar-se furtivamente de um Cauda-de-Sangue já é difícil, mas encontrar seu ponto fraco durante a batalha é quase impossível!</q>`;
 }
 
 function mostrarTexto101() {
-    document.getElementById('tex19').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex19').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Dois conjuntos de asas</li>
 					<li>Brânquias</li>
@@ -693,7 +693,7 @@ function mostrarTexto101() {
 }
 
 function mostrarTexto102() {
-    document.getElementById('tex19').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex19').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Chamas escarlates</li>
                     <li>Movimento dos olhos</li>
@@ -703,21 +703,21 @@ function mostrarTexto102() {
 }
 
 function mostrarTextoAlert19() {
-    document.getElementById('tex19').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex19').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto020() {
-    document.getElementById('tex20').innerHTML = ``;
+	document.getElementById('tex20').innerHTML = ``;
 }
 
 function mostrarTexto55() {
-    document.getElementById('tex20').innerHTML = `<h2>Descrição:</h2><q>Notoriamente dramático, este inseguro Dragão da Classe Stoker é conhecido por sua manobra giratória de Ciclone Flamejante em batalha... e no acasalamento!
+	document.getElementById('tex20').innerHTML = `<h2>Descrição:</h2><q>Notoriamente dramático, este inseguro Dragão da Classe Stoker é conhecido por sua manobra giratória de Ciclone Flamejante em batalha... e no acasalamento!
 O Tufãomerangue entra em ação e derrota os inimigos cuspindo jatos de fogo.</q>`;
 }
 
 function mostrarTexto56() {
-    document.getElementById('tex20').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex20').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Asas grandes</li>
 					<li>Par de chifres lisos</li>
@@ -727,7 +727,7 @@ function mostrarTexto56() {
 }
 
 function mostrarTexto57() {
-    document.getElementById('tex20').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex20').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Jatos ciclônicos de chamas</li>
                     <li>Ciclone em chamas</li>
@@ -737,20 +737,20 @@ function mostrarTexto57() {
 }
 
 function mostrarTextoAlert20() {
-    document.getElementById('tex20').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex20').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto021() {
-    document.getElementById('tex21').innerHTML = ``;
+	document.getElementById('tex21').innerHTML = ``;
 }
 
 function mostrarTexto58() {
-    document.getElementById('tex21').innerHTML = `<h2>Descrição:</h2><q>Os Ferrões Letais são dragões venenosos, violentos e vis. Talvez um verdadeiro treinador berkiano possa trazer à tona seu lado mais suave... mas por enquanto: evite-os a todo custo. O monstruoso Deathgripper pode cortar, retalhar e golpear um inimigo com força letal. Eles devem ser evitados a todo custo... a menos que estejam do seu lado.</q>`;
+	document.getElementById('tex21').innerHTML = `<h2>Descrição:</h2><q>Os Ferrões Letais são dragões venenosos, violentos e vis. Talvez um verdadeiro treinador berkiano possa trazer à tona seu lado mais suave... mas por enquanto: evite-os a todo custo. O monstruoso Deathgripper pode cortar, retalhar e golpear um inimigo com força letal. Eles devem ser evitados a todo custo... a menos que estejam do seu lado.</q>`;
 }
 
 function mostrarTexto59() {
-    document.getElementById('tex21').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex21').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Presas retráteis salientes</li>
 					<li>Armadura de placas ao longo das costas</li>
@@ -760,7 +760,7 @@ function mostrarTexto59() {
 }
 
 function mostrarTexto60() {
-    document.getElementById('tex21').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex21').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Explosões de chamas ácidas raivosas</li>
                     <li>Picada sedativa</li>
@@ -769,22 +769,22 @@ function mostrarTexto60() {
 }
 
 function mostrarTextoAlert21() {
-    document.getElementById('tex21').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex21').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto022() {
-    document.getElementById('tex22').innerHTML = ``;
+	document.getElementById('tex22').innerHTML = ``;
 }
 
 function mostrarTexto61() {
-    document.getElementById('tex22').innerHTML = `<h2>Descrição:</h2><q>A Fúria da Luz se move tão rápido quanto Banguela e compartilha sua habilidade de se camuflar no céu — mesmo durante o dia.
+	document.getElementById('tex22').innerHTML = `<h2>Descrição:</h2><q>A Fúria da Luz se move tão rápido quanto Banguela e compartilha sua habilidade de se camuflar no céu — mesmo durante o dia.
 Com sua coloração branca, a Fúria da Luz se esconde perfeitamente em nuvens, neblina marítima e horizontes distantes. Embora arisca e cética, a Fúria da Luz também compartilha o profundo senso de empatia de Banguela e sempre empunhará sua rajada de plasma para defender qualquer um em necessidade.
 Transforma temporariamente cada escama em uma superfície reflexiva que espelha o ambiente da Fúria da Luz, essencialmente tornando-a invisível.</q>`;
 }
 
 function mostrarTexto62() {
-    document.getElementById('tex22').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex22').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Olhos de gato</li>
 					<li>Crista longa e fina que percorre a espinha</li>
@@ -795,7 +795,7 @@ function mostrarTexto62() {
 }
 
 function mostrarTexto63() {
-    document.getElementById('tex22').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex22').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Cargas plasmáticas em forma de acetileno e oxigênio</li>
                     <li>Camuflagem por meio de rajadas de plasma</li>
@@ -808,21 +808,21 @@ function mostrarTexto63() {
 }
 
 function mostrarTextoAlert22() {
-    document.getElementById('tex22').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex22').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto023() {
-    document.getElementById('tex23').innerHTML = ``;
+	document.getElementById('tex23').innerHTML = ``;
 }
 
 function mostrarTexto64() {
-    document.getElementById('tex23').innerHTML = `<h2>Descrição:</h2><q>Um choque da Classe Strike, este Dragão está entre os mais temidos. Ele pode invocar raios para disparar rajadas elétricas. Que choque!
+	document.getElementById('tex23').innerHTML = `<h2>Descrição:</h2><q>Um choque da Classe Strike, este Dragão está entre os mais temidos. Ele pode invocar raios para disparar rajadas elétricas. Que choque!
 Inimigos, cuidado! O Skrill tempestade estimulou o ataque com bolas de raios mais poderosas do que qualquer natural.</q>`;
 }
 
 function mostrarTexto65() {
-    document.getElementById('tex23').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex23').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Espinhos metálicos refinados nas costas</li>
 					<li>Garras longas nas asas</li>
@@ -833,7 +833,7 @@ function mostrarTexto65() {
 }
 
 function mostrarTexto66() {
-    document.getElementById('tex23').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex23').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Relâmpago</li>
                     <li>Eletrocinese</li>
@@ -846,21 +846,21 @@ function mostrarTexto66() {
 }
 
 function mostrarTextoAlert23() {
-    document.getElementById('tex23').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex23').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto024() {
-    document.getElementById('tex24').innerHTML = ``;
+	document.getElementById('tex24').innerHTML = ``;
 }
 
 function mostrarTexto67() {
-    document.getElementById('tex24').innerHTML = `<h2>Descrição:</h2><q>Este dragão tem uma visão notoriamente ruim e usa sensores térmicos para localizar suas presas. Ele se camufla na neve porque, se não consegue te ver, não quer que você o veja!
+	document.getElementById('tex24').innerHTML = `<h2>Descrição:</h2><q>Este dragão tem uma visão notoriamente ruim e usa sensores térmicos para localizar suas presas. Ele se camufla na neve porque, se não consegue te ver, não quer que você o veja!
 O Fantasma da Neve usa sua visão térmica para encontrar suas presas. Então, se a situação esquentar, encontre um pouco de neve para se proteger e se refrescar!</q>`;
 }
 
 function mostrarTexto68() {
-    document.getElementById('tex24').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex24').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Longa saliência sob o queixo</li>
 					<li>Espinhos na cauda</li>
@@ -871,7 +871,7 @@ function mostrarTexto68() {
 }
 
 function mostrarTexto69() {
-    document.getElementById('tex24').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex24').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Fuzilaria de gelo</li>
                     <li>Visão térmica</li>
@@ -883,21 +883,21 @@ function mostrarTexto69() {
 }
 
 function mostrarTextoAlert24() {
-    document.getElementById('tex24').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex24').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto025() {
-    document.getElementById('tex25').innerHTML = ``;
+	document.getElementById('tex25').innerHTML = ``;
 }
 
 function mostrarTexto70() {
-    document.getElementById('tex25').innerHTML = `<h2>Descrição:</h2><q>As três caudas deste dragão gigante da classe Strike podem cortar seus inimigos ou serpentear ao redor de suas presas. Ao se deparar com um, a melhor coisa a fazer é virar as costas e correr!
+	document.getElementById('tex25').innerHTML = `<h2>Descrição:</h2><q>As três caudas deste dragão gigante da classe Strike podem cortar seus inimigos ou serpentear ao redor de suas presas. Ao se deparar com um, a melhor coisa a fazer é virar as costas e correr!
 Cuidado com este dragão, vikings! Uma vez que ele os tenha na mira, é quase impossível se livrar da sua cauda.</q>`;
 }
 
 function mostrarTexto71() {
-    document.getElementById('tex25').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex25').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Três caudas que se unem para formar uma</li>
 					<li>Dois apêndices semelhantes a orelhas na cabeça</li>
@@ -906,7 +906,7 @@ function mostrarTexto71() {
 }
 
 function mostrarTexto72() {
-    document.getElementById('tex25').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex25').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Fluxos contínuos de chamas laranja altamente concentradas</li>
                     <li>Veneno único em cada ferrão</li>
@@ -917,22 +917,22 @@ function mostrarTexto72() {
 }
 
 function mostrarTextoAlert25() {
-    document.getElementById('tex25').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex25').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto026() {
-    document.getElementById('tex26').innerHTML = ``;
+	document.getElementById('tex26').innerHTML = ``;
 }
 
 function mostrarTexto73() {
-    document.getElementById('tex26').innerHTML = `<h2>Descrição:</h2><q>Assim como todos os membros do reino animal, os dragões também devem seguir uma hierarquia de poder e liderança.
+	document.getElementById('tex26').innerHTML = `<h2>Descrição:</h2><q>Assim como todos os membros do reino animal, os dragões também devem seguir uma hierarquia de poder e liderança.
 No topo dessa cadeia de comando, reina um dragão alfa extremamente raro , diante do qual todos os outros se curvam — a Besta Perplexa. No entanto, as Bestas Perplexas não nascem com esse status alfa; ele é conquistado por meio de combate, vigilância e, mais importante, do desejo de proteger os dragões e todas as outras criaturas em seu ninho. Felizmente para as Bestas Perplexas, existem poucos dragões no mundo que podem igualar sua estatura intimidadora e sequer sonhar em competir pelo título de "rei de todos os dragões".
 As Bestas Perplexas também são arquitetos impressionantes, construindo ninhos quase impenetráveis com o gelo que elas mesmas criam e usando fontes termais naturais para fornecer calor e sustento ao rebanho sob seus cuidados. De seu oásis dentro desse casulo gelado, a Besta Perplexa governa todos os dragões sem preconceito, sem malícia e sem questionamentos.</q>`;
 }
 
 function mostrarTexto74() {
-    document.getElementById('tex26').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex26').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Grandes espinhos projetando-se da parte de trás do pescoço</li>
 					<li>Dentes pequenos em comparação com a proporção do corpo</li>
@@ -942,7 +942,7 @@ function mostrarTexto74() {
 }
 
 function mostrarTexto75() {
-    document.getElementById('tex26').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex26').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Massas de água que congelam com o impacto quando disparadas</li>
                     <li>Dragões controladores da mente</li>
@@ -953,21 +953,21 @@ function mostrarTexto75() {
 }
 
 function mostrarTextoAlert26() {
-    document.getElementById('tex26').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex26').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto027() {
-    document.getElementById('tex27').innerHTML = ``;
+	document.getElementById('tex27').innerHTML = ``;
 }
 
 function mostrarTexto76() {
-    document.getElementById('tex27').innerHTML = `<h2>Descrição:</h2><q>Emergindo das profundezas dos mares do Norte, este nadador da Classe Maré ataca os inimigos com jatos fumegantes de água fervente!
+	document.getElementById('tex27').innerHTML = `<h2>Descrição:</h2><q>Emergindo das profundezas dos mares do Norte, este nadador da Classe Maré ataca os inimigos com jatos fumegantes de água fervente!
 Uma barriga cheia de água fervente ensina rapidamente os oponentes a não se aproximarem muito de um Caldeirão furioso em batalha.</q>`;
 }
 
 function mostrarTexto77() {
-    document.getElementById('tex27').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex27').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Pescoço longo</li>
 					<li>Dentes pequenos em comparação com a proporção do corpo</li>
@@ -981,7 +981,7 @@ function mostrarTexto77() {
 }
 
 function mostrarTexto78() {
-    document.getElementById('tex27').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex27').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Água fervente</li>
                     <li>Imunidade dos dentes venenosos à eletrorrecepção do oleandro azul</li>
@@ -989,16 +989,16 @@ function mostrarTexto78() {
 }
 
 function mostrarTextoAlert27() {
-    document.getElementById('tex27').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex27').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto028() {
-    document.getElementById('tex28').innerHTML = ``;
+	document.getElementById('tex28').innerHTML = ``;
 }
 
 function mostrarTexto79() {
-    document.getElementById('tex28').innerHTML = `<h2>Descrição:</h2><q>Um enorme habitante das profundezas do mar com atributos de crustáceo, o Shellfire desliza pelo oceano a velocidades incríveis e reboca o navio de guerra Dragon Hunter aparafusado em suas costas.
+	document.getElementById('tex28').innerHTML = `<h2>Descrição:</h2><q>Um enorme habitante das profundezas do mar com atributos de crustáceo, o Shellfire desliza pelo oceano a velocidades incríveis e reboca o navio de guerra Dragon Hunter aparafusado em suas costas.
 Reminiscente de um caranguejo-ferradura muito maior — muito mais raivoso —, o Shellfire ignora ataques com sua carapaça durável e causa devastação com seus chifres salientes. No passado, marinheiros desavisados ​​costumavam confundir sua concha considerável com uma massa de terra e afundar seus navios nela. Essa foi a última vez que alguém ouviu falar desses marinheiros, mas rumores de sua morte provavelmente deram a Viggo Grimborn a ideia de prender um navio de guerra de metal, caçador de dragões, às costas do Shellfire.
 O Shellfire é um gigantesco dragão de águas profundas com Asas de Titã e uma concha traseira dura e plana para proteção.
 O Shellfire pode lançar enormes pedras flamejantes que explodem como balas de canhão gigantes.
@@ -1006,7 +1006,7 @@ Não se sabe muito sobre ele; Os vikings do passado distante confundiam a enorme
 }
 
 function mostrarTexto80() {
-    document.getElementById('tex28').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex28').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Asas longas, mas proporcionalmente pequenas</li>
 					<li>Chifres longos</li>
@@ -1016,7 +1016,7 @@ function mostrarTexto80() {
 }
 
 function mostrarTexto81() {
-    document.getElementById('tex28').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex28').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Cargas de plasma do tamanho de balas de canhão</li>
                     <li>Expulsando algas vermelhas das guelras</li>
@@ -1025,21 +1025,21 @@ function mostrarTexto81() {
 }
 
 function mostrarTextoAlert28() {
-    document.getElementById('tex28').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex28').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto029() {
-    document.getElementById('tex29').innerHTML = ``;
+	document.getElementById('tex29').innerHTML = ``;
 }
 
 function mostrarTexto82() {
-    document.getElementById('tex29').innerHTML = `<h2>Descrição:</h2><q>Em terra ou no mar, este boquirroto da Classe Maré possui uma Explosão Sônica forte o suficiente para matar um Viking... ou pelo menos sujar suas calças.
+	document.getElementById('tex29').innerHTML = `<h2>Descrição:</h2><q>Em terra ou no mar, este boquirroto da Classe Maré possui uma Explosão Sônica forte o suficiente para matar um Viking... ou pelo menos sujar suas calças.
 O Tambor Trovejante mantém um curso estável em uma luta enquanto explode os oponentes com um estrondo sônico.</q>`;
 }
 
 function mostrarTexto83() {
-    document.getElementById('tex29').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex29').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Boca expansível</li>
 					<li>Pernas pequenas</li>
@@ -1050,7 +1050,7 @@ function mostrarTexto83() {
 }
 
 function mostrarTexto84() {
-    document.getElementById('tex29').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex29').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Sonic explode/bolas de fogo</li>
                     <li>Expulsando o ar do corpo para nadar</li>
@@ -1059,16 +1059,16 @@ function mostrarTexto84() {
 }
 
 function mostrarTextoAlert29() {
-    document.getElementById('tex29').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex29').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
 
 function mostrarTexto030() {
-    document.getElementById('tex30').innerHTML = ``;
+	document.getElementById('tex30').innerHTML = ``;
 }
 
 function mostrarTexto85() {
-    document.getElementById('tex30').innerHTML = `<h2>Descrição:</h2><q>Caríbdis. O Kraken. Serpentes marinhas. Durante séculos, marinheiros assustados contaram histórias de uma fera que poderia virar os próprios oceanos contra eles — se soubessem o quão certos esses mitos estavam! O dragão Submaripper cria redemoinhos criando um vórtice em sua boca e inicia tsunamis quando seu corpo maciço rompe a superfície da água como uma baleia . No entanto, o Submaripper só libera essas defesas quando atacado por vikings tolos e quando encontra seu inimigo natural, o Shellfire !
+	document.getElementById('tex30').innerHTML = `<h2>Descrição:</h2><q>Caríbdis. O Kraken. Serpentes marinhas. Durante séculos, marinheiros assustados contaram histórias de uma fera que poderia virar os próprios oceanos contra eles — se soubessem o quão certos esses mitos estavam! O dragão Submaripper cria redemoinhos criando um vórtice em sua boca e inicia tsunamis quando seu corpo maciço rompe a superfície da água como uma baleia . No entanto, o Submaripper só libera essas defesas quando atacado por vikings tolos e quando encontra seu inimigo natural, o Shellfire !
 O Submaripper é um gigantesco dragão marinho profundo que cria redemoinhos e ondas gigantes para trazer presas até suas mandíbulas à espreita.
 O Submaripper pode ser reconhecido pelas bolhas distintas e malcheirosas que aparecem quando se aproxima.
 Ele reage às vibrações na água acima dele e as segue na esperança de encontrar comida. Normalmente não é um dragão agressivo, mas ataca se ameaçado.
@@ -1076,7 +1076,7 @@ O Submaripper não cospe fogo, mas vomita os destroços que ingeriu, pulverizand
 }
 
 function mostrarTexto86() {
-    document.getElementById('tex30').innerHTML = `<h2>Características:</h2>
+	document.getElementById('tex30').innerHTML = `<h2>Características:</h2>
 				<ul>
 					<li>Pés palmados</li>
 					<li>Saliências nas costas</li>
@@ -1086,7 +1086,7 @@ function mostrarTexto86() {
 }
 
 function mostrarTexto87() {
-    document.getElementById('tex30').innerHTML = `<h2>Habilidades:</h2>
+	document.getElementById('tex30').innerHTML = `<h2>Habilidades:</h2>
 				<ul>
 					<li>Tipo de fogo: Detritos cravejados de arpões/Bolas de fogo do redemoinho</li>
                     <li>Criando redemoinhos e maremotos</li>
@@ -1095,6 +1095,72 @@ function mostrarTexto87() {
 }
 
 function mostrarTextoAlert30() {
-    document.getElementById('tex30').innerHTML = `<div class="alert alert-danger" role="alert">
+	document.getElementById('tex30').innerHTML = `<div class="alert alert-danger" role="alert">
+ 	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
+}
+
+function mostrarTexto031() {
+	document.getElementById('tex31').innerHTML = ``;
+}
+
+function mostrarTexto88() {
+	document.getElementById('tex31').innerHTML = `<h2>Descrição:</h2><q>O faro de um Rumblehorn sabe! Da classe Rastreador, ele consegue seguir o mais leve cheiro para qualquer lugar. Não há onde se esconder deste Dragão!
+Quando um Rumblehorn não quer se mover, ele não se move... mas quando um Rumblehorn avança, os oponentes saem do caminho!</q>`;
+}
+
+function mostrarTexto89() {
+	document.getElementById('tex31').innerHTML = `<h2>Características:</h2>
+				<ul>
+					<li>Cauda em forma de clava</li>
+					<li>Mandíbula semelhante a uma britadeira</li>
+                    <li>Pescoço blindado</li>
+                    <li>Chifres longos na cabeça</li>
+					<li>Pequenos espinhos nas costas e na cauda.</li>
+				</ul>`;
+}
+
+function mostrarTexto90() {
+	document.getElementById('tex31').innerHTML = `<h2>Habilidades:</h2>
+				<ul>
+					<li>Tipo de fogo: "Mísseis" de rocha flamejante</li>
+                    <li>Rastreamento de desastres</li>
+                    <li>Detecção de impacto de cabeça</li>
+				</ul>`;
+}
+
+function mostrarTextoAlert31() {
+	document.getElementById('tex31').innerHTML = `<div class="alert alert-danger" role="alert">
+ 	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
+}
+
+function mostrarTexto032() {
+	document.getElementById('tex32').innerHTML = ``;
+}
+
+function mostrarTexto91() {
+	document.getElementById('tex32').innerHTML = `<h2>Descrição:</h2><q>Gás + Faísca = BOOM! Este dragão misterioso de duas cabeças, astuto e evasivo, é um problema em dobro... quando não está brigando consigo mesmo. A combinação de gás e faísca do Horrível Zippleback torna este dragão uma força poderosa em batalha.</q>`;
+}
+
+function mostrarTexto92() {
+	document.getElementById('tex32').innerHTML = `<h2>Características:</h2>
+				<ul>
+					<li>Duas cabeças</li>
+					<li>Chifres</li>
+                    <li>Cauda dividida</li>
+                    <li>Lobs ao longo do pescoço, costas e cauda</li>
+				</ul>`;
+}
+
+function mostrarTexto93() {
+	document.getElementById('tex32').innerHTML = `<h2>Habilidades:</h2>
+				<ul>
+					<li>Tipo de fogo: Nitrato de amônio misturado com hidrazina anidra</li>
+                    <li>Ouroboros flamejantes</li>
+                    <li>Cérebros transmissores</li>
+				</ul>`;
+}
+
+function mostrarTextoAlert32() {
+	document.getElementById('tex32').innerHTML = `<div class="alert alert-danger" role="alert">
  	EXTREMAMENTE PERIGOSO, MATAR NA HORA!`;
 }
