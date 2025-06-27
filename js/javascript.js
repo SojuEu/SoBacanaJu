@@ -1,13 +1,3 @@
-const carousel = document.getElementById('meuCarrossel');
-
-carousel.addEventListener('slide.bs.carousel', function () {
-	const videos = carousel.querySelectorAll('video');
-	videos.forEach(video => {
-		video.pause();
-		video.currentTime = 0; // opcional: reinicia o vídeo
-	});
-});
-
 let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
 
@@ -23,6 +13,16 @@ window.addEventListener('scroll', () => {
 	}
 
 	lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // evita valor negativo
+});
+
+const carousel = document.getElementById('meuCarrossel');
+
+carousel.addEventListener('slide.bs.carousel', function () {
+	const videos = carousel.querySelectorAll('video');
+	videos.forEach(video => {
+		video.pause();
+		video.currentTime = 0;
+	});
 });
 
 function mostrarTexto1() {
